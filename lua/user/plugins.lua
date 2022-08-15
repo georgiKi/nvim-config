@@ -38,25 +38,21 @@ packer.init {
   },
 }
 
--- Install your plugins here
+-- Plugins
 return packer.startup(function(use)
-  -- My plugins here
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "kdheepak/lazygit.nvim" -- LazyGit git UI
   use "projekt0n/github-nvim-theme" -- Github theme
   use "nvim-lualine/lualine.nvim" -- Custom bottom line
-  use "nvim-treesitter/nvim-treesitter" -- Treesitter
+  use "nvim-treesitter/nvim-treesitter" -- Better code hightlight
   use {
       'kyazdani42/nvim-tree.lua',
-      requires = {
-        'kyazdani42/nvim-web-devicons', -- optional, for file icons
-      },
-      tag = 'nightly' -- optional, updated every week. (see issue #1193)
-  }
-  -- Automatically set up your configuration after cloning packer.nvim
-  -- Put this at the end after all plugins
+      requires = {'kyazdani42/nvim-web-devicons'} -- For file icons
+  } -- Directory tree
+
+  -- Automatically set up configuration after cloning packer.nvim
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end

@@ -1,12 +1,12 @@
 -- Use a protected call so we don't error out on first use
-local status_ok, bottomLine = pcall(require, "lualine")
+local status_ok, lualine = pcall(require, "lualine")
 if not status_ok then
   return
 end
 
-bottomLine.setup {
+lualine.setup {
   options = {
-    icons_enabled = false,
+    icons_enabled = true,
     theme = 'ayu_dark',
     disabled_filetypes = {
       statusline = {},
