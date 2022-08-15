@@ -79,6 +79,16 @@ _G.packer_plugins = {
     path = "/Users/georgi_kirilov/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
     url = "https://github.com/kdheepak/lazygit.nvim"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/Users/georgi_kirilov/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/Users/georgi_kirilov/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/georgi_kirilov/.local/share/nvim/site/pack/packer/start/packer.nvim",
