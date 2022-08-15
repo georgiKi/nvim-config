@@ -46,6 +46,7 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "kdheepak/lazygit.nvim" -- LazyGit git UI
   use "projekt0n/github-nvim-theme" -- Github theme
+  use "nvim-lualine/lualine.nvim" -- Custom bottom line
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
