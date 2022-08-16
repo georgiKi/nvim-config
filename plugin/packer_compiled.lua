@@ -74,6 +74,11 @@ _G.packer_plugins = {
     path = "/Users/georgi_kirilov/.local/share/nvim/site/pack/packer/start/auto-save.nvim",
     url = "https://github.com/pocco81/auto-save.nvim"
   },
+  ["barbar.nvim"] = {
+    loaded = true,
+    path = "/Users/georgi_kirilov/.local/share/nvim/site/pack/packer/start/barbar.nvim",
+    url = "https://github.com/romgrk/barbar.nvim"
+  },
   ["github-nvim-theme"] = {
     loaded = true,
     path = "/Users/georgi_kirilov/.local/share/nvim/site/pack/packer/start/github-nvim-theme",

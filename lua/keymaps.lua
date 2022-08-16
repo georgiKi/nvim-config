@@ -50,3 +50,7 @@ keymap("v", "<S-k>", ":m .-2<CR>==", opts)
 -- Persist copied value in clipboard
 keymap("v", "p", '"_dP', opts)
 
+-- Move to previous/next
+keymap("n", "<C-,>", ":BufferPrevious<cr>", opts)
+keymap("n", "<C-.>", ":BufferNext<cr>", opts)
+keymap("n", "<C-/>", ":BufferClose<cr>", opts)

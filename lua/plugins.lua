@@ -49,9 +49,13 @@ return packer.startup(function(use)
   use "nvim-lualine/lualine.nvim" -- Custom bottom line
   use "nvim-treesitter/nvim-treesitter" -- Better code hightlight
   use {
-      'kyazdani42/nvim-tree.lua',
-      requires = {'kyazdani42/nvim-web-devicons'} -- For file icons
-  } -- Directory tree
+        'kyazdani42/nvim-tree.lua',
+        requires = {'kyazdani42/nvim-web-devicons'} -- For file icons
+    } -- Directory tree
+  use {
+        'romgrk/barbar.nvim',
+        requires = {'kyazdani42/nvim-web-devicons'}
+    } -- Bar UI 
 
   -- Automatically set up configuration after cloning packer.nvim
   if PACKER_BOOTSTRAP then
