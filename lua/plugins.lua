@@ -51,12 +51,12 @@ return packer.startup(function(use)
   use "gelguy/wilder.nvim" -- Wild menu autocomplete
   use {
         'kyazdani42/nvim-tree.lua',
-        requires = {'kyazdani42/nvim-web-devicons'} -- For file icons
-    } -- Directory tree
+        requires = {'kyazdani42/nvim-web-devicons'}
+  } -- Directory tree
   use {
         'romgrk/barbar.nvim',
         requires = {'kyazdani42/nvim-web-devicons'}
-    } -- Bar UI 
+  } -- Bar 
 
   -- Automatically set up configuration after cloning packer.nvim
   if PACKER_BOOTSTRAP then
