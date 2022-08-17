@@ -48,6 +48,7 @@ return packer.startup(function(use)
   use "rebelot/kanagawa.nvim" -- Theme
   use "nvim-lualine/lualine.nvim" -- Custom bottom line
   use "nvim-treesitter/nvim-treesitter" -- Better code hightlight
+  use "gelguy/wilder.nvim" -- Wild menu autocomplete
   use {
         'kyazdani42/nvim-tree.lua',
         requires = {'kyazdani42/nvim-web-devicons'} -- For file icons
