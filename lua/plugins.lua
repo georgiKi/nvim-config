@@ -45,7 +45,7 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used in lots of plugins
   use "pocco81/auto-save.nvim" -- Auto save unsaved changes
   use "kdheepak/lazygit.nvim" -- LazyGit git UI
-  use "projekt0n/github-nvim-theme" -- Github theme
+  use "rebelot/kanagawa.nvim" -- Theme
   use "nvim-lualine/lualine.nvim" -- Custom bottom line
   use "nvim-treesitter/nvim-treesitter" -- Better code hightlight
   use {
