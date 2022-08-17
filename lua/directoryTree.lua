@@ -7,7 +7,7 @@ end
 nvimTree.setup({
   view = {
     adaptive_size = true,
-    side = "right",
+    side = "left",
     width = 40,
     mappings = {
       list = {
@@ -20,12 +20,3 @@ nvimTree.setup({
   },
 })
 
--- Attempts to close directory tree when the last window in buffer is closed
-vim.api.nvim_create_autocmd("BufEnter", {
-  nested = true,
-  callback = function()
-    if #vim.api.nvim_list_wins() == 1 and vim.api.nvim_buf_get_name(0):match("NvimTree_") ~= nil then
-      vim.cmd "quit"
-    end
-  end
-})

@@ -79,10 +79,10 @@ _G.packer_plugins = {
     path = "/Users/georgi_kirilov/.local/share/nvim/site/pack/packer/start/barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
   },
-  ["github-nvim-theme"] = {
+  ["kanagawa.nvim"] = {
     loaded = true,
-    path = "/Users/georgi_kirilov/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
-    url = "https://github.com/projekt0n/github-nvim-theme"
+    path = "/Users/georgi_kirilov/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
+    url = "https://github.com/rebelot/kanagawa.nvim"
   },
   ["lazygit.nvim"] = {
     loaded = true,
@@ -123,6 +123,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/georgi_kirilov/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
+  },
+  ["wilder.nvim"] = {
+    loaded = true,
+    path = "/Users/georgi_kirilov/.local/share/nvim/site/pack/packer/start/wilder.nvim",
+    url = "https://github.com/gelguy/wilder.nvim"
   }
 }
 
