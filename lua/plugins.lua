@@ -48,6 +48,7 @@ return packer.startup(function(use)
   use "nvim-lualine/lualine.nvim" -- Custom bottom line
   use "nvim-treesitter/nvim-treesitter" -- Better code hightlight
   use "gelguy/wilder.nvim" -- Wild menu autocomplete
+  use "karb94/neoscroll.nvim" -- Smooth scroll
   use {
         'kyazdani42/nvim-tree.lua',
         requires = {'kyazdani42/nvim-web-devicons'}
