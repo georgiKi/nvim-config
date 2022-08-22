@@ -9,3 +9,6 @@ require "bar"
 require "wildmenu"
 require "scroll"
 require "completion"
+
+-- LPSs
+require "lsp.tsserver"

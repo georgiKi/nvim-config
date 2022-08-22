@@ -50,6 +50,9 @@ return packer.startup(function(use)
     use "gelguy/wilder.nvim" -- Wild menu autocomplete
     use "karb94/neoscroll.nvim" -- Smooth scroll
     use "glepnir/dashboard-nvim" -- Dashboard initial view
+	use { "L3MON4D3/LuaSnip" } --snippet engine
+	use { "rafamadriz/friendly-snippets" } -- a of snippets to use
+    use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
     use {
         'kyazdani42/nvim-tree.lua',
         requires = {'kyazdani42/nvim-web-devicons'}
@@ -67,10 +70,6 @@ return packer.startup(function(use)
         "hrsh7th/cmp-nvim-lua"
     } -- Cmp plugins
         
-	-- snippets
-	use { "L3MON4D3/LuaSnip" } --snippet engine
-	use { "rafamadriz/friendly-snippets" } -- a bunch of snippets to use
-
     -- Automatically set up configuration after cloning packer.nvim
     if PACKER_BOOTSTRAP then
         require("packer").sync()
