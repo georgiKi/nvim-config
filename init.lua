@@ -12,3 +12,4 @@ require "completion"
 
 -- LPSs
 require "lsp.tsserver"
+require "lsp.nullLs"

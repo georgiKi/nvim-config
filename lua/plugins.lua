@@ -50,9 +50,11 @@ return packer.startup(function(use)
     use "gelguy/wilder.nvim" -- Wild menu autocomplete
     use "karb94/neoscroll.nvim" -- Smooth scroll
     use "glepnir/dashboard-nvim" -- Dashboard initial view
+    use "gpanders/editorconfig.nvim" -- Editorconfig support
 	use { "L3MON4D3/LuaSnip" } --snippet engine
 	use { "rafamadriz/friendly-snippets" } -- a of snippets to use
-    use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
+    use "neovim/nvim-lspconfig" -- Configurations for Nvim LSP
+    use "jose-elias-alvarez/null-ls.nvim" -- NeoVim as LSP
     use {
         'kyazdani42/nvim-tree.lua',
         requires = {'kyazdani42/nvim-web-devicons'}
