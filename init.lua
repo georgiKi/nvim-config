@@ -9,6 +9,7 @@ require "bar"
 require "wildmenu"
 require "scroll"
 require "completion"
+require "autopairs"
 
 -- LPSs
 require "lsp.tsserver"
