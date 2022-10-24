@@ -56,5 +56,5 @@ keymap("n", "<C-.>", ":BufferNext<cr>", opts)
 keymap("n", "<C-/>", ":BufferClose<cr>", opts)
 
 -- Telescope mappings
-keymap("n", "<leader>f", ":Telescope find_files<cr>", opts)
+keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 keymap("n", "<leader>i", ":Telescope live_grep<cr>", opts)
