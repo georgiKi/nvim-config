@@ -48,6 +48,7 @@ return packer.startup(function(use)
     use "nvim-lualine/lualine.nvim" -- Custom bottom line
     use "nvim-treesitter/nvim-treesitter" -- Better code hightlight
     use "gelguy/wilder.nvim" -- Wild menu autocomplete
+    use "nvim-telescope/telescope.nvim" -- Search modal
     use "karb94/neoscroll.nvim" -- Smooth scroll
     use "windwp/nvim-autopairs" -- Autopairs
     use "glepnir/dashboard-nvim" -- Dashboard initial view
@@ -57,7 +58,7 @@ return packer.startup(function(use)
     use "neovim/nvim-lspconfig" -- Configurations for Nvim LSP
     use "jose-elias-alvarez/null-ls.nvim" -- NeoVim as LSP
     use {
-        'kyazdani42/nvim-tree.lua',
+       'kyazdani42/nvim-tree.lua',
         requires = {'kyazdani42/nvim-web-devicons'}
     } -- Directory tree
     use {

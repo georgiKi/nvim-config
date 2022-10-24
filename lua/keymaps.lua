@@ -54,3 +54,6 @@ keymap("v", "p", '"_dP', opts)
 keymap("n", "<C-,>", ":BufferPrevious<cr>", opts)
 keymap("n", "<C-.>", ":BufferNext<cr>", opts)
 keymap("n", "<C-/>", ":BufferClose<cr>", opts)
+
+-- Telescope mappings
+keymap("n", "<leader>f", ":Telescope find_files<cr>", opts)
