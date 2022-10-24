@@ -57,3 +57,4 @@ keymap("n", "<C-/>", ":BufferClose<cr>", opts)
 
 -- Telescope mappings
 keymap("n", "<leader>f", ":Telescope find_files<cr>", opts)
+keymap("n", "<leader>i", ":Telescope live_grep<cr>", opts)
