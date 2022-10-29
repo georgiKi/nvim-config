@@ -58,7 +58,10 @@ return packer.startup(function(use)
 	use "rafamadriz/friendly-snippets" -- a of snippets to use
     use "neovim/nvim-lspconfig" -- Configurations for Nvim LSP
     use "jose-elias-alvarez/null-ls.nvim" -- NeoVim as LSP
-    use "justinmk/vim-sneak" -- Page Jumper
+    use {
+       'phaazon/hop.nvim',
+        branch = 'v2', 
+    } -- Page Jumper
     use {
        'kyazdani42/nvim-tree.lua',
         requires = {'kyazdani42/nvim-web-devicons'}
