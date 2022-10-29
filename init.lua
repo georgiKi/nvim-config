@@ -11,6 +11,7 @@ require "scroll"
 require "completion"
 require "autopairs"
 require "hopJumper"
+require "troubled"
 
 -- LPSs
 require "lsp.tsserver"

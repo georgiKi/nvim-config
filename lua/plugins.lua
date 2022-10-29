@@ -55,7 +55,8 @@ return packer.startup(function(use)
     use "glepnir/dashboard-nvim" -- Dashboard initial view
     use "gpanders/editorconfig.nvim" -- Editorconfig support
 	use "L3MON4D3/LuaSnip" --snippet engine
-	use "rafamadriz/friendly-snippets" -- a of snippets to use
+	use "rafamadriz/friendly-snippets" -- snippets
+    use "folke/trouble.nvim" -- beautified warnings and errors
     use "neovim/nvim-lspconfig" -- Configurations for Nvim LSP
     use "jose-elias-alvarez/null-ls.nvim" -- NeoVim as LSP
     use {
