@@ -10,6 +10,7 @@ require "wildmenu"
 require "scroll"
 require "completion"
 require "autopairs"
+require "sneak"
 
 -- LPSs
 require "lsp.tsserver"
