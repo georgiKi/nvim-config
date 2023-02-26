@@ -53,7 +53,6 @@ return packer.startup(function(use)
     use "folke/which-key.nvim" -- Shortcuts helper
     use "karb94/neoscroll.nvim" -- Smooth scroll
     use "windwp/nvim-autopairs" -- Autopairs
-    use "glepnir/dashboard-nvim" -- Dashboard initial view
     use "gpanders/editorconfig.nvim" -- Editorconfig support
 	use "L3MON4D3/LuaSnip" --snippet engine
 	use "rafamadriz/friendly-snippets" -- snippets
