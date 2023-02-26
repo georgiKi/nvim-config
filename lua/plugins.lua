@@ -49,6 +49,7 @@ return packer.startup(function(use)
     use "nvim-treesitter/nvim-treesitter" -- Better code hightlight
     use "gelguy/wilder.nvim" -- Wild menu autocomplete
     use "nvim-telescope/telescope.nvim" -- Search modal
+    use "nvim-telescope/telescope-file-browser.nvim" -- Telescope Browser
     use "folke/which-key.nvim" -- Shortcuts helper
     use "karb94/neoscroll.nvim" -- Smooth scroll
     use "windwp/nvim-autopairs" -- Autopairs

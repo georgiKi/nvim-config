@@ -12,6 +12,8 @@ require "completion"
 require "autopairs"
 require "hopJumper"
 require "troubled"
+require "telescope"
+require "telescopeBrowser"
 
 -- LPSs
 require "lsp.tsserver"

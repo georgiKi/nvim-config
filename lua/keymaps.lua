@@ -6,9 +6,9 @@ local term_opts = { silent = true }
 local keymap = vim.api.nvim_set_keymap
 
 --Remap space as leader key
-keymap("", "<Space>", "<Nop>", opts)
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+keymap("", "<§>", "<Nop>", opts)
+vim.g.mapleader = "§"
+vim.g.maplocalleader = "§"
 
 -- Modes
 --   normal_mode = "n",
@@ -66,3 +66,5 @@ keymap("n", "<leader>h", ":HopWord <CR>", opts)
 keymap("n", "<leader>t", ":Trouble <CR>", opts)
 keymap("n", "<leader>tr", ":TroubleClose <CR>", opts)
 
+-- Goto definition
+keymap('n', '<leader>I', "vim.lsp.buf.implementation <CR>", opts)

@@ -7,12 +7,12 @@ local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 nullLs.setup({
     sources = {
-        nullLs.builtins.formatting.prettier,
+        -- nullLs.builtins.formatting.prettier,
         nullLs.builtins.completion.spell,
         nullLs.builtins.completion.luasnip,
-        nullLs.builtins.completion.tags,
-        nullLs.builtins.diagnostics.eslint,
-        nullLs.builtins.formatting.prettier_d_slim
+        nullLs.builtins.completion.tags
+        -- nullLs.builtins.diagnostics.eslint,
+        -- nullLs.builtins.formatting.prettier_d_slim
     },
     -- Format on save
     on_attach = function(client, bufnr)

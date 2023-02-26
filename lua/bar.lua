@@ -9,7 +9,7 @@ bufferline.setup {
   animation = false,
 
   -- Enable/disable auto-hiding the tab bar when there is a single buffer
-  auto_hide = true,
+  auto_hide = false,
 
   -- Enable/disable current/total tabpages indicator (top right corner)
   tabpages = true,
@@ -29,7 +29,7 @@ bufferline.setup {
   -- Enable/disable icons
   -- if set to 'numbers', will show buffer index in the tabline
   -- if set to 'both', will show buffer index and icons in the tabline
-  icons = true,
+  icons = false,
 
   -- If set, the icon color will follow its corresponding buffer
   -- highlight group. By default, the Buffer*Icon group is linked to the
