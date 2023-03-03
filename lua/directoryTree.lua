@@ -7,7 +7,7 @@ end
 nvimTree.setup({
   view = {
     adaptive_size = false,
-    side = "left",
+    side = "right",
     width = 40,
     mappings = {
       list = {
