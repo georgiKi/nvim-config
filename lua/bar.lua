@@ -15,7 +15,7 @@ bufferline.setup {
   tabpages = true,
 
   -- Enable/disable close button
-  closable = true,
+  closable = false,
 
   -- Enables/disable clickable tabs
   --  - left-click: go to buffer
