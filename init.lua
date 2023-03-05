@@ -16,5 +16,5 @@ require "telescope"
 require "telescopeBrowser"
 
 -- LPSs
-require "lsp.tsserver"
+require "lsp.lspconfig"
 require "lsp.nullLs"

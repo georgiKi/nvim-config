@@ -68,3 +68,8 @@ keymap("n", "<leader>tr", ":TroubleClose <CR>", opts)
 
 -- Goto definition
 keymap('n', '<leader>I', "vim.lsp.buf.implementation <CR>", opts)
+
+-- LSP
+keymap("n", "<leader>d", "<cmd>lua vim.lsp.buf.definition()<cr>", opts)
+keymap("n", "<leader>r", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
+keymap("n", "<leader>p", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
