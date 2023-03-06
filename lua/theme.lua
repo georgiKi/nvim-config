@@ -4,10 +4,12 @@ if not status_ok then
   return
 end
 
-local default_colors = require("kanagawa.colors").setup()
+-- local default_colors = require("kanagawa.colors").setup()
 local custom_colors = {
-    bg = "NONE",
-    bg_status = "NONE"
+    palette = { 
+        bg = "NONE",
+        bg_status = "NONE"
+    }
 }
 local overrides = {}
 
@@ -26,7 +28,6 @@ theme.setup {
     globalStatus = true,       -- adjust window separators highlight for laststatus=3
     terminalColors = true,      -- define vim.g.terminal_color_{0,17}
     theme = "default",          -- Load "default" theme or the experimental "light" theme
-    overrides = overrides,
     colors = custom_colors
 }
 
