@@ -15,6 +15,12 @@ local custom_colors = {
                 bg         = "NONE", 
                 bg_search  = "NONE",
                 bg_visual  = "NONE",
+                bg_p1      = "NONE",
+                bg_p2      = "NONE",
+                fg_reverse = "NONE",
+                float = {
+                    bg     = "NONE",
+                },
             }
         }
     }
