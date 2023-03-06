@@ -13,6 +13,8 @@ local custom_colors = {
                 bg_m2      = "NONE", 
                 bg_m1      = "NONE", 
                 bg         = "NONE", 
+                bg_search  = "NONE",
+                bg_visual  = "NONE",
             }
         }
     }

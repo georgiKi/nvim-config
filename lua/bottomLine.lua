@@ -4,10 +4,19 @@ if not status_ok then
   return
 end
 
+local custom_theme = require'lualine.themes.everforest'
+
+-- Change the background of lualine_c section for normal mode
+custom_theme.inactive.c.bg = 'nil'
+custom_theme.visual.c.bg = 'nil'
+custom_theme.replace.c.bg = 'nil'
+custom_theme.insert.c.bg = 'nil'
+custom_theme.normal.c.bg = 'nil'
+
 lualine.setup {
   options = {
     icons_enabled = true,
-    theme = 'ayu_dark',
+    theme = custom_theme,
     disabled_filetypes = {
       statusline = {},
       winbar = {},
