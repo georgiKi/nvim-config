@@ -6,7 +6,6 @@ end
 
 local custom_theme = require'lualine.themes.everforest'
 
--- Change the background of lualine_c section for normal mode
 custom_theme.inactive.c.bg = 'nil'
 custom_theme.visual.c.bg = 'nil'
 custom_theme.replace.c.bg = 'nil'
