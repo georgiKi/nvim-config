@@ -4,14 +4,19 @@ if not status_ok then
   return
 end
 
--- local default_colors = require("kanagawa.colors").setup()
 local custom_colors = {
-    palette = { 
-        bg = "NONE",
-        bg_status = "NONE"
+    theme = {
+         all = {
+            ui = {
+                bg_gutter  = "NONE", 
+                bg_m3      = "NONE", 
+                bg_m2      = "NONE", 
+                bg_m1      = "NONE", 
+                bg         = "NONE", 
+            }
+        }
     }
 }
-local overrides = {}
 
 theme.setup {
     undercurl = true,           -- enable undercurls
