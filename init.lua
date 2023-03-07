@@ -14,6 +14,7 @@ require "hopJumper"
 require "troubled"
 require "telescope"
 require "telescopeBrowser"
+require "whichKey"
 
 -- LPSs
 require "lsp.lspconfig"
