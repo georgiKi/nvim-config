@@ -48,6 +48,7 @@ return packer.startup(function(use)
     use "nvim-lualine/lualine.nvim" -- Custom bottom line
     use "nvim-treesitter/nvim-treesitter" -- Better code hightlight
     use "gelguy/wilder.nvim" -- Wild menu autocomplete
+    use 'simrat39/symbols-outline.nvim' -- Outline Tree
     use "nvim-telescope/telescope.nvim" -- Search modal
     use "nvim-telescope/telescope-file-browser.nvim" -- Telescope Browser
     use "folke/which-key.nvim" -- Shortcuts helper
