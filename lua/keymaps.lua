@@ -5,6 +5,11 @@ local term_opts = { silent = true }
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
+-- TODO: make keyOptions function work for additonal options when registering new key maps 
+function keyOptions(options)
+    return { noremap = true, silent = true, options }
+end
+
 --Remap space as leader key
 keymap("", "<§>", "<Nop>", opts)
 vim.g.mapleader = "§"
@@ -74,3 +79,22 @@ keymap('n', '<leader>I', "vim.lsp.buf.implementation <CR>", opts)
 keymap("n", "<leader>d", "<cmd>lua vim.lsp.buf.definition()<cr>", opts)
 keymap("n", "<leader>r", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
 keymap("n", "<leader>p", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
+
+-- Improved Search
+vim.api.nvim_set_keymap('n', 'n',
+    [[<Cmd>execute('normal! ' . v:count1 . 'n')<CR><Cmd>lua require('hlslens').start()<CR>]],
+    opts)
+vim.api.nvim_set_keymap('n', 'N',
+    [[<Cmd>execute('normal! ' . v:count1 . 'N')<CR><Cmd>lua require('hlslens').start()<CR>]],
+    opts)
+vim.api.nvim_set_keymap('n', '*', [[*<Cmd>lua require('hlslens').start()<CR>]], opts)
+vim.api.nvim_set_keymap('n', '#', [[#<Cmd>lua require('hlslens').start()<CR>]], opts)
+vim.api.nvim_set_keymap('n', 'g*', [[g*<Cmd>lua require('hlslens').start()<CR>]], opts)
+vim.api.nvim_set_keymap('n', 'g#', [[g#<Cmd>lua require('hlslens').start()<CR>]], opts)
+
+vim.api.nvim_set_keymap('n', '<Leader>l', '<Cmd>noh<CR>', opts)
+
+-- Comment Toggle
+keymap("n", "<leader>c", "<cmd>lua require('Comment.api').toggle.linewise.current()<cr>", opts)
+keymap("v", "<leader>c", "<ESC><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<cr>", opts)
+

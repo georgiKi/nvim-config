@@ -60,6 +60,14 @@ return packer.startup(function(use)
     use "folke/trouble.nvim" -- beautified warnings and errors
     use "neovim/nvim-lspconfig" -- Configurations for Nvim LSP
     use "jose-elias-alvarez/null-ls.nvim" -- NeoVim as LSP
+    use "kevinhwang91/nvim-hlslens" -- Improved Search
+    use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+    } -- Comment Out
+    -- TODO Make Comment out syntax automatic based on the file extension 
     use {
        'phaazon/hop.nvim',
         branch = 'v2', 

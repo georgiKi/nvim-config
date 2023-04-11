@@ -16,6 +16,7 @@ require "troubled"
 require "telescope"
 require "telescopeBrowser"
 require "whichKey"
+require "improvedSearch"
 
 -- LPSs
 require "lsp.lspconfig"
