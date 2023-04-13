@@ -18,5 +18,8 @@ nvimTree.setup({
   renderer = {
     group_empty = true,
   },
+  hijack_directories = {
+    auto_open = false
+  },
 })
 
