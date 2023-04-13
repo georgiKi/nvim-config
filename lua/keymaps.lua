@@ -64,6 +64,7 @@ keymap("n", "<C-/>", ":BufferClose<cr>", opts)
 -- Telescope
 keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 keymap("n", "<leader>i", ":Telescope live_grep<CR>", opts)
+keymap("n", "<leader>b", ":Telescope buffers<CR>", opts)
 
 -- Hop
 keymap("n", "<leader>h", ":HopWord <CR>", opts)
