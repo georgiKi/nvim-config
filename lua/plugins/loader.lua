@@ -43,5 +43,5 @@ local plugins = {
     },
 }
 
-require("lazy").setup(plugins)
+require("lazy").setup(plugins, { ui = { border = "single" } })
 
