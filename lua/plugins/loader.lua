@@ -1,5 +1,5 @@
-local utils = require "../core/utils"
-local config = require "config"
+local config = require "lua.plugins.config"
+local utils = require "lua.plugins.utils"
 
 ---------------------------------------------------------------------------
 -- Install Package Manager
@@ -23,12 +23,12 @@ vim.opt.rtp:prepend(lazypath)
 -- Reload Plugins On File Save Autocommand
 ---------------------------------------------------------------------------
 
--- vim.cmd [[
---   augroup plugins_user_config
---     autocmd!
---     autocmd BufWritePost plugins_loader.lua source <afile> | PackerSync
---   augroup end
--- ]]
+ -- vim.cmd [[
+   -- augroup plugins_user_config
+     -- autocmd!
+     -- autocmd BufWritePost loader.lua source <afile> | Lazy sync
+   -- augroup end
+ -- ]]
 
 ---------------------------------------------------------------------------
 -- Plugins Setup
@@ -37,20 +37,16 @@ vim.opt.rtp:prepend(lazypath)
 local plugins = {
     { 
         config.theme.repo_path, 
-        enabled = utils.enabledPlugin(config.theme.name)
-        lazy = config.theme.lazy_loaded,
-        config = utils.setupPlugin(config.theme.name, config.theme.config)
+        priority = 1000,
+        enabled = config.theme.enabled,
+        config = utils.setupPlugin(config.theme.name, config.theme.config, config.theme.artifacts)
     }, 
+    { 
+        config.nvim_tree.repo_path, 
+        enabled = config.nvim_tree.enabled,
+        config = utils.setupPlugin(config.nvim_tree.name, config.nvim_tree.config, config.nvim_tree.artifacts)
+    },
 }
 
 require("lazy").setup(plugins)
-
----------------------------------------------------------------------------
--- Post Plugins Artifacts
----------------------------------------------------------------------------
-
-if utils.enabledPlugin(config.theme.name) then
-    vim.cmd("colorscheme kanagawa")
-    vim.opt.fillchars:append { eob = " " }
-end
 

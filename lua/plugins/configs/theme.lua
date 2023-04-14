@@ -1,8 +1,7 @@
 return {
-    name = "kanawaga",
+    name = "kanagawa",
     repo_path = "rebelot/kanagawa.nvim",
-    lazy_loaded = false,
-    dependancies = {},
+    enabled = true,
     config = {
         undercurl = true,           -- enable undercurls
         commentStyle = { italic = true },
@@ -19,23 +18,30 @@ return {
         terminalColors = true,      -- define vim.g.terminal_color_{0,17}
         theme = "default",          -- Load "default" theme or the experimental "light" theme
         colors = {
-             all = {
-                ui = {
-                    bg_gutter  = "NONE", 
-                    bg_m3      = "NONE", 
-                    bg_m2      = "NONE", 
-                    bg_m1      = "NONE", 
-                    bg         = "NONE", 
-                    bg_search  = "NONE",
-                    bg_visual  = "GRAY",
-                    bg_p1      = "NONE",
-                    bg_p2      = "NONE",
-                    fg_reverse = "NONE",
-                    float = {
-                        bg     = "NONE",
-                    },
+            theme = {
+                 all = {
+                    ui = {
+                        bg_gutter  = "NONE", 
+                        bg_m3      = "NONE", 
+                        bg_m2      = "NONE", 
+                        bg_m1      = "NONE", 
+                        bg         = "NONE", 
+                        bg_search  = "NONE",
+                        bg_visual  = "GRAY",
+                        bg_p1      = "NONE",
+                        bg_p2      = "NONE",
+                        fg_reverse = "NONE",
+                        float = {
+                            bg     = "NONE",
+                        },
+                    }
                 }
             }
         }
-    }
+    },
+    artifacts = 
+        function() 
+            vim.cmd("colorscheme kanagawa") 
+            vim.opt.fillchars:append { eob = " " }
+        end
 }
