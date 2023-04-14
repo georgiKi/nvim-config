@@ -47,8 +47,3 @@ utils.keymap("v", "<S-k>", ":m .-2<CR>==")
 
 -- Persist copied value in clipboard
 utils.keymap("v", "p", '"_dP')
-
--- Move to previous/next
-utils.keymap("n", "<C-,>", ":BufferPrevious<cr>")
-utils.keymap("n", "<C-.>", ":BufferNext<cr>")
-utils.keymap("n", "<C-/>", ":BufferClose<cr>")
