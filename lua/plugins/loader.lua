@@ -1,5 +1,5 @@
-local config = require "lua.plugins.config"
-local utils = require "lua.plugins.utils"
+local config = require "plugins.config"
+local utils = require "plugins.utils"
 
 ---------------------------------------------------------------------------
 -- Install Package Manager

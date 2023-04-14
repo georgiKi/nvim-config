@@ -1,4 +1,4 @@
-local utils = require "lua.core.utils"
+local utils = require "core.utils"
 
 ---------------------------------------------------------------------------
 -- NEOVIM Key Mappings

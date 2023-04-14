@@ -1,5 +1,5 @@
-local theme = require "lua.plugins.configs.theme" 
-local nvim_tree = require "lua.plugins.configs.nvim_tree"
+local theme = require "plugins.configs.main.theme" 
+local nvim_tree = require "plugins.configs.main.nvim_tree"
 ---------------------------------------------------------
 -- Plugins Config Map
 ----------------------------------------------------------

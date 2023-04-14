@@ -39,9 +39,8 @@ return {
             }
         }
     },
-    artifacts = 
-        function() 
-            vim.cmd("colorscheme kanagawa") 
-            vim.opt.fillchars:append { eob = " " }
-        end
+    artifacts = function() 
+        vim.cmd("colorscheme kanagawa") 
+        vim.opt.fillchars:append { eob = " " }
+    end
 }

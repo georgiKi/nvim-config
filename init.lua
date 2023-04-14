@@ -1,4 +1,4 @@
-require "lua.core.config"
-require "lua.core.keymaps"
-require "lua.core.utils"
-require "lua.plugins.loader"
+require "core.config"
+require "core.keymaps"
+require "core.utils"
+require "plugins.loader"

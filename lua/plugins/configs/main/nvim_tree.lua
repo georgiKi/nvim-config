@@ -1,4 +1,4 @@
-local utils = require "lua.core.utils"
+local utils = require "core.utils"
 
 return {
     name = "nvim-tree",
@@ -23,8 +23,7 @@ return {
             auto_open = false
         } 
     },
-    artifacts = 
-        function() 
-            utils.keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
-        end
+    artifacts = function() 
+        utils.keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+    end
 }
