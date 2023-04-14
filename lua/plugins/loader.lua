@@ -20,17 +20,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 ---------------------------------------------------------------------------
--- Reload Plugins On File Save Autocommand
----------------------------------------------------------------------------
-
- -- vim.cmd [[
-   -- augroup plugins_user_config
-     -- autocmd!
-     -- autocmd BufWritePost loader.lua source <afile> | Lazy sync
-   -- augroup end
- -- ]]
-
----------------------------------------------------------------------------
 -- Plugins Setup
 ---------------------------------------------------------------------------
 
@@ -44,6 +33,7 @@ local plugins = {
     { 
         config.nvim_tree.repo_path, 
         enabled = config.nvim_tree.enabled,
+        dependencies = config.nvim_tree.dependencies,
         config = utils.setupPlugin(config.nvim_tree.name, config.nvim_tree.config, config.nvim_tree.artifacts)
     },
 }

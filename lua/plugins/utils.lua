@@ -4,9 +4,15 @@
 
 local M = {}
 
-M.setupPlugin = function(packageName, config, artifactsFunc)
+M.setupPlugin = function(name, config, artifactsFunc)
     return function()
-        require(packageName).setup(config)
+        local status_ok, plugin = pcall(require, name)
+
+        if not status_ok then
+          return
+        end
+
+        plugin.setup(config)
 
         if artifactsFunc then 
             artifactsFunc()

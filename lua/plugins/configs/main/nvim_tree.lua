@@ -4,7 +4,7 @@ return {
     name = "nvim-tree",
     repo_path = "kyazdani42/nvim-tree.lua",
     enabled = true,
-    dependancies = {"kyazdani42/nvim-web-devicons"},
+    dependencies = "kyazdani42/nvim-web-devicons",
     config = {
         view = {
             adaptive_size = false,
