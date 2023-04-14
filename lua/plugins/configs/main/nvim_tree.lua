@@ -24,6 +24,6 @@ return {
         } 
     },
     artifacts = function() 
-        utils.keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+        utils.keymap("n", "<leader>e", ":NvimTreeToggle<cr>", { desc = "File Explorer" })
     end
 }

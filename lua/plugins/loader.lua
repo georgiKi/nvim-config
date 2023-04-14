@@ -36,6 +36,11 @@ local plugins = {
         dependencies = config.nvim_tree.dependencies,
         config = utils.setupPlugin(config.nvim_tree.name, config.nvim_tree.config, config.nvim_tree.artifacts)
     },
+    { 
+        config.which_key.repo_path, 
+        enabled = config.which_key.enabled,
+        config = utils.setupPlugin(config.which_key.name, config.which_key.config)
+    },
 }
 
 require("lazy").setup(plugins)

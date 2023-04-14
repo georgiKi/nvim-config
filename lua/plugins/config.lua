@@ -1,5 +1,8 @@
 local theme = require "plugins.configs.main.theme" 
 local nvim_tree = require "plugins.configs.main.nvim_tree"
+
+local which_key = require "plugins.configs.addons.which_key"
+
 ---------------------------------------------------------
 -- Plugins Config Map
 ----------------------------------------------------------
@@ -15,9 +18,12 @@ local nvim_tree = require "plugins.configs.main.nvim_tree"
 
 local M  = {}
 
-
+-- Main
 M.theme = theme
 M.nvim_tree = nvim_tree
+
+-- Addons
+M.which_key = which_key
 
 
 return M
