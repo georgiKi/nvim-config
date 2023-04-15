@@ -42,6 +42,11 @@ local plugins = {
         config = utils.setupPlugin(config.symbols_outline.name, config.symbols_outline.config, config.symbols_outline.artifacts)
     },
     { 
+        config.lualine.repo_path, 
+        enabled = config.lualine.enabled,
+        config = utils.setupPlugin(config.lualine.name, config.lualine.config, config.lualine.artifacts)
+    },
+    { 
         config.which_key.repo_path, 
         enabled = config.which_key.enabled,
         config = utils.setupPlugin(config.which_key.name, config.which_key.config)
