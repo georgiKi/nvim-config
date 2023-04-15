@@ -15,7 +15,7 @@ M.setupPlugin = function(name, config, artifactsFunc)
         plugin.setup(config)
 
         if artifactsFunc then 
-            artifactsFunc()
+            artifactsFunc(plugin)
         end
     end
 end

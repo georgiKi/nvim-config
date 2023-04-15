@@ -2,6 +2,7 @@ local theme = require "plugins.configs.main.theme"
 local nvim_tree = require "plugins.configs.main.nvim_tree"
 
 local which_key = require "plugins.configs.addons.which_key"
+local wilder = require "plugins.configs.addons.wilder"
 
 ---------------------------------------------------------
 -- Plugins Config Map
@@ -24,6 +25,7 @@ M.nvim_tree = nvim_tree
 
 -- Addons
 M.which_key = which_key
+M.wilder = wilder
 
 
 return M

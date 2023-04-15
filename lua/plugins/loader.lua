@@ -41,6 +41,11 @@ local plugins = {
         enabled = config.which_key.enabled,
         config = utils.setupPlugin(config.which_key.name, config.which_key.config)
     },
+    { 
+        config.wilder.repo_path, 
+        enabled = config.wilder.enabled,
+        config = utils.setupPlugin(config.wilder.name, config.wilder.config)
+    },
 }
 
 require("lazy").setup(plugins, { ui = { border = "single" } })
