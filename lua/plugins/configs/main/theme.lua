@@ -37,7 +37,12 @@ return {
                     }
                 }
             }
-        }
+        },
+        overrides = function ()
+            return {
+                 WinSeparator = { fg = "#1F1F28" }
+            }
+        end
     },
     artifacts = function() 
         vim.cmd("colorscheme kanagawa") 
