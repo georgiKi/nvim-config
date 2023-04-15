@@ -1,3 +1,6 @@
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 return {
     name = "kanagawa",
     repo_path = "rebelot/kanagawa.nvim",
