@@ -1,5 +1,6 @@
 local theme = require "plugins.configs.main.theme" 
 local nvim_tree = require "plugins.configs.main.nvim_tree"
+local symbols_outline = require "plugins.configs.main.symbols_outline"
 
 local which_key = require "plugins.configs.addons.which_key"
 local wilder = require "plugins.configs.addons.wilder"
@@ -22,6 +23,7 @@ local M  = {}
 -- Main
 M.theme = theme
 M.nvim_tree = nvim_tree
+M.symbols_outline = symbols_outline
 
 -- Addons
 M.which_key = which_key
