@@ -4,5 +4,6 @@ return {
     enabled = true,
     config = {
         modes = {':', '/', '?'}
-    }
+    },
+    artifacts = nil
 }

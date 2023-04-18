@@ -5,6 +5,7 @@ local lualine = require "plugins.configs.main.lualine"
 
 local which_key = require "plugins.configs.addons.which_key"
 local wilder = require "plugins.configs.addons.wilder"
+local telescope = require "plugins.configs.addons.telescope.telescope"
 
 ---------------------------------------------------------
 -- Plugins Config Map
@@ -17,7 +18,7 @@ local wilder = require "plugins.configs.addons.wilder"
 -- `enabled` : Plugin enabled
 -- `dependancies` : Plugin dependancies
 -- `config` : Plugin config overrides
--- `artifacts?` : After loaded plugin scripts function 
+-- `artifacts` : Plugin scripts to be invoked after plugin is loaded 
 
 local M  = {}
 
@@ -30,6 +31,7 @@ M.lualine = lualine
 -- Addons
 M.which_key = which_key
 M.wilder = wilder
+M.telescope = telescope
 
 
 return M

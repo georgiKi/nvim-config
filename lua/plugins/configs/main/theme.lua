@@ -4,6 +4,7 @@ vim.g.loaded_netrwPlugin = 1
 return {
     name = "kanagawa",
     repo_path = "rebelot/kanagawa.nvim",
+    priority = 1000,
     enabled = true,
     config = {
         undercurl = true,           -- enable undercurls

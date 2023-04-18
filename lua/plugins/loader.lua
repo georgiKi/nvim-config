@@ -23,40 +23,18 @@ vim.opt.rtp:prepend(lazypath)
 -- Plugins Setup
 ---------------------------------------------------------------------------
 
-local plugins = {
-    { 
-        config.theme.repo_path, 
-        priority = 1000,
-        enabled = config.theme.enabled,
-        config = utils.setupPlugin(config.theme.name, config.theme.config, config.theme.artifacts)
-    }, 
-    { 
-        config.nvim_tree.repo_path, 
-        enabled = config.nvim_tree.enabled,
-        dependencies = config.nvim_tree.dependencies,
-        config = utils.setupPlugin(config.nvim_tree.name, config.nvim_tree.config, config.nvim_tree.artifacts)
-    },
-    { 
-        config.symbols_outline.repo_path, 
-        enabled = config.symbols_outline.enabled,
-        config = utils.setupPlugin(config.symbols_outline.name, config.symbols_outline.config, config.symbols_outline.artifacts)
-    },
-    { 
-        config.lualine.repo_path, 
-        enabled = config.lualine.enabled,
-        config = utils.setupPlugin(config.lualine.name, config.lualine.config, config.lualine.artifacts)
-    },
-    { 
-        config.which_key.repo_path, 
-        enabled = config.which_key.enabled,
-        config = utils.setupPlugin(config.which_key.name, config.which_key.config)
-    },
-    { 
-        config.wilder.repo_path, 
-        enabled = config.wilder.enabled,
-        config = utils.setupPlugin(config.wilder.name, config.wilder.config)
-    },
-}
+local plugins = {}
+
+
+for key, plugin in pairs(config) do
+  table.insert(plugins, {
+        plugin.repo_path, 
+        priority = plugin.priority,
+        enabled = plugin.enabled,
+        dependencies = plugin.dependencies,
+        config = utils.setupPlugin(plugin.name, plugin.config, plugin.artifacts)
+  })
+end
 
 require("lazy").setup(plugins, { ui = { border = "single" } })
 
