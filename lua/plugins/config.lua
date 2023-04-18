@@ -7,6 +7,7 @@ local comment = require "plugins.configs.main.comment"
 local which_key = require "plugins.configs.addons.which_key"
 local wilder = require "plugins.configs.addons.wilder"
 local telescope = require "plugins.configs.addons.telescope.telescope"
+local hop = require "plugins.configs.addons.hop"
 
 ---------------------------------------------------------
 -- Plugins Config Map
@@ -34,6 +35,7 @@ M.comment = comment
 M.which_key = which_key
 M.wilder = wilder
 M.telescope = telescope
+M.hop = hop
 
 return M
 
