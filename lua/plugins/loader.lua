@@ -25,7 +25,6 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {}
 
-
 for key, plugin in pairs(config) do
   table.insert(plugins, {
         plugin.repo_path, 

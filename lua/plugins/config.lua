@@ -33,6 +33,5 @@ M.which_key = which_key
 M.wilder = wilder
 M.telescope = telescope
 
-
 return M
 
