@@ -46,6 +46,7 @@ return {
         custom_theme.visual.c.bg = 'nil'
         custom_theme.replace.c.bg = 'nil'
         custom_theme.insert.c.bg = 'nil'
+        custom_theme.command.c.bg = 'nil'
         custom_theme.normal.c.bg = 'nil'
 
         lualine.setup {

@@ -5,7 +5,7 @@ return {
     repo_path = "nvim-telescope/telescope.nvim",
     enabled = true,
     dependencies = "nvim-lua/plenary.nvim",
-    config = {}
+    config = {},
     artifacts = function ()
         utils.keymap(
             "n", 
