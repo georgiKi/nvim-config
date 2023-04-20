@@ -5,6 +5,7 @@ local lualine = require "plugins.configs.main.lualine"
 local comment = require "plugins.configs.main.comment"
 local hlslens = require "plugins.configs.main.hlslens"
 local trouble = require "plugins.configs.main.trouble"
+local indent_blankline = require "plugins.configs.main.indent_blankline"
 
 local which_key = require "plugins.configs.addons.which_key"
 local wilder = require "plugins.configs.addons.wilder"
@@ -35,6 +36,7 @@ M.lualine = lualine
 M.comment = comment
 M.hlslens = hlslens
 M.trouble = trouble
+M.indent_blankline = indent_blankline
 
 -- Addons
 M.which_key = which_key
