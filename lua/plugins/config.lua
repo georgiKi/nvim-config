@@ -10,6 +10,7 @@ local which_key = require "plugins.configs.addons.which_key"
 local wilder = require "plugins.configs.addons.wilder"
 local telescope = require "plugins.configs.addons.telescope.telescope"
 local hop = require "plugins.configs.addons.hop"
+local noice = require "plugins.configs.addons.noice"
 
 ---------------------------------------------------------
 -- Plugins Config Map
@@ -40,6 +41,7 @@ M.which_key = which_key
 M.wilder = wilder
 M.telescope = telescope
 M.hop = hop
+M.noice = noice
 
 return M
 
