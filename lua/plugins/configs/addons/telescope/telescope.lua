@@ -4,6 +4,7 @@ return {
     name = "telescope",
     repo_path = "nvim-telescope/telescope.nvim",
     enabled = true,
+    priority = 950,
     dependencies = "nvim-lua/plenary.nvim",
     config = {},
     artifacts = function ()

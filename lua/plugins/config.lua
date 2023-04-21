@@ -1,5 +1,6 @@
 local theme = require "plugins.configs.main.theme" 
 local nvim_tree = require "plugins.configs.main.nvim_tree"
+local nvim_notify = require "plugins.configs.main.nvim_notify"
 local symbols_outline = require "plugins.configs.main.symbols_outline"
 local lualine = require "plugins.configs.main.lualine"
 local comment = require "plugins.configs.main.comment"
@@ -31,6 +32,7 @@ local M  = {}
 -- Main
 M.theme = theme
 M.nvim_tree = nvim_tree
+M.nvim_notify = nvim_notify
 M.symbols_outline = symbols_outline
 M.lualine = lualine
 M.comment = comment
