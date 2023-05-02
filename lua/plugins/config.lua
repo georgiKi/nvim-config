@@ -13,6 +13,7 @@ local wilder = require "plugins.configs.addons.wilder"
 local telescope = require "plugins.configs.addons.telescope.telescope"
 local hop = require "plugins.configs.addons.hop"
 local noice = require "plugins.configs.addons.noice"
+local neoscroll = require "plugins.configs.addons.neoscroll"
 
 ---------------------------------------------------------
 -- Plugins Config Map
@@ -46,6 +47,7 @@ M.wilder = wilder
 M.telescope = telescope
 M.hop = hop
 M.noice = noice
+M.neoscroll = neoscroll
 
 return M
 
