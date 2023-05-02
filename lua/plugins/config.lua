@@ -7,6 +7,7 @@ local comment = require "plugins.configs.main.comment"
 local hlslens = require "plugins.configs.main.hlslens"
 local trouble = require "plugins.configs.main.trouble"
 local indent_blankline = require "plugins.configs.main.indent_blankline"
+local treesitter = require "plugins.configs.main.treesitter"
 
 local which_key = require "plugins.configs.addons.which_key"
 local wilder = require "plugins.configs.addons.wilder"
@@ -40,6 +41,7 @@ M.comment = comment
 M.hlslens = hlslens
 M.trouble = trouble
 M.indent_blankline = indent_blankline
+M.treesitter = treesitter
 
 -- Addons
 M.which_key = which_key
