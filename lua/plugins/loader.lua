@@ -31,6 +31,7 @@ for key, plugin in pairs(config) do
         priority = plugin.priority,
         enabled = plugin.enabled,
         dependencies = plugin.dependencies,
+        build = plugin.build,
         config = utils.setupPlugin(plugin.name, plugin.config, plugin.artifacts)
   })
 end

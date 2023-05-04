@@ -1,8 +1,12 @@
+local mason = require "plugins.configs.essential.lsp.mason"
+local mason_lspconfig = require "plugins.configs.essential.lsp.mason_lspconfig"
+local nvim_lspconfig = require "plugins.configs.essential.lsp.nvim_lspconfig"
 local telescope = require "plugins.configs.essential.telescope.telescope"
 local comment = require "plugins.configs.essential.comment"
 local hlslens = require "plugins.configs.essential.hlslens"
 local indent_blankline = require "plugins.configs.essential.indent_blankline"
 local lualine = require "plugins.configs.essential.lualine"
+local nvim_cmp = require "plugins.configs.essential.nvim_cmp"
 local nvim_tree = require "plugins.configs.essential.nvim_tree"
 local symbols_outline = require "plugins.configs.essential.symbols_outline"
 local trouble = require "plugins.configs.essential.trouble"
@@ -11,7 +15,7 @@ local hop = require "plugins.configs.subsidiary.hop"
 local which_key = require "plugins.configs.subsidiary.which_key"
 local wilder = require "plugins.configs.subsidiary.wilder"
 
-local theme = require "plugins.configs.ui.theme" 
+local theme = require "plugins.configs.ui.theme"
 local nvim_notify = require "plugins.configs.ui.nvim_notify"
 local treesitter = require "plugins.configs.ui.treesitter"
 local noice = require "plugins.configs.ui.noice"
@@ -29,16 +33,21 @@ local neoscroll = require "plugins.configs.ui.neoscroll"
 -- `enabled` : Plugin enabled
 -- `dependancies` : Plugin dependancies
 -- `config` : Plugin config overrides
+-- `build` : Plugin command to run on build
 -- `artifacts` : Plugin scripts to be invoked after plugin is loaded 
 
 local M  = {}
 
 -- Essential
+M.mason = mason
+M.mason_lspconfig = mason_lspconfig
+M.nvim_lspconfig = nvim_lspconfig
 M.telescope = telescope
 M.comment = comment
 M.hlslens = hlslens
 M.indent_blankline = indent_blankline
 M.lualine = lualine
+M.nvim_cmp = nvim_cmp
 M.nvim_tree = nvim_tree
 M.symbols_outline = symbols_outline
 M.trouble = trouble
