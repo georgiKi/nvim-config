@@ -1,3 +1,7 @@
+---------------------------------------------------------------------------
+-- Vim Configuration
+---------------------------------------------------------------------------
+
 local config = {
   backup = false,                          
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
@@ -40,3 +44,32 @@ end
 
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
+
+---------------------------------------------------------------------------
+-- Disable builtin Vim plugins
+---------------------------------------------------------------------------
+
+local disabled_built_ins = {
+  "2html_plugin",
+  "getscript",
+  "getscriptPlugin",
+  "gzip",
+  "logipat",
+  "netrw",
+  "netrwPlugin",
+  "netrwSettings",
+  "netrwFileHandlers",
+  "matchit",
+  "matchparen",
+  "tar",
+  "tarPlugin",
+  "rrhelper",
+  "vimball",
+  "vimballPlugin",
+  "zip",
+  "zipPlugin",
+}
+
+for _, plugin in pairs(disabled_built_ins) do
+  vim.g["loaded_" .. plugin] = 1
+end
