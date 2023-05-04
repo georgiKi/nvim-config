@@ -14,10 +14,10 @@ local utils = require "core.utils"
 
 
 -- Leader key
-utils.keymap("", " ", "<Nop>")
+utils.keymap("", "§", "<Nop>")
 
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.g.mapleader = "§"
+vim.g.maplocalleader = "§"
 
 -- Normal --
 -- Better window navigation
