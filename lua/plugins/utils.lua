@@ -6,16 +6,24 @@ local M = {}
 
 M.setupPlugin = function(name, config, artifactsFunc)
     return function()
-        local status_ok, plugin = pcall(require, name)
+        if name then
+            local status_ok, plugin = pcall(require, name)
 
-        if not status_ok then
-          return
+            if not status_ok then
+              return
+            end
+
+            plugin.setup(config)
+
+            if artifactsFunc then
+                artifactsFunc(plugin)
+            end
+
+            return
         end
 
-        plugin.setup(config)
-
-        if artifactsFunc then 
-            artifactsFunc(plugin)
+        if artifactsFunc then
+            artifactsFunc()
         end
     end
 end
