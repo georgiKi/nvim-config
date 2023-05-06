@@ -25,11 +25,11 @@ return {
             theme = {
                  all = {
                     ui = {
-                        bg_gutter  = "NONE", 
-                        bg_m3      = "NONE", 
-                        bg_m2      = "NONE", 
-                        bg_m1      = "NONE", 
-                        bg         = "NONE", 
+                        bg_gutter  = "NONE",
+                        bg_m3      = "NONE",
+                        bg_m2      = "NONE",
+                        bg_m1      = "NONE",
+                        bg         = "NONE",
                         bg_search  = "NONE",
                         bg_visual  = "GRAY",
                         bg_p1      = "NONE",
@@ -48,8 +48,8 @@ return {
             }
         end
     },
-    artifacts = function() 
-        vim.cmd("colorscheme kanagawa") 
+    artifacts = function()
+        vim.cmd("colorscheme kanagawa")
         vim.opt.fillchars:append { eob = " " }
     end
 }
