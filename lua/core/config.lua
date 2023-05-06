@@ -3,11 +3,11 @@
 ---------------------------------------------------------------------------
 
 local config = {
-  backup = false,                          
+  backup = false,
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
-  completeopt = { "menuone", "noselect" }, 
+  completeopt = { "menuone", "noselect" },
   conceallevel = 0,                        -- so that `` is visible in markdown files
-  fileencoding = "utf-8",                 
+  fileencoding = "utf-8",
   hlsearch = true,                         -- highlight all matches on previous search pattern
   ignorecase = true,                       -- ignore case in search patterns
   mouse = "a",                             -- allow the mouse to be used in neovim
@@ -32,7 +32,7 @@ local config = {
   numberwidth = 4,                         -- set number column width to 2 {default 4}
   signcolumn = "yes",                      -- always show the sign column, otherwise it would shift the text each time
   wrap = false,                            -- display lines as one long line
-  scrolloff = 8,                           
+  scrolloff = 8,
   sidescrolloff = 8,
 }
 

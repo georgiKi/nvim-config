@@ -10,7 +10,6 @@ return {
               "quick_lint_js",
               "cssls",
               "cssmodules_ls",
-              "csharp_ls",
               "angularls",
               "jsonls",
               "eslint"
