@@ -8,7 +8,8 @@ local hlslens = require "plugins.configs.essential.hlslens"
 local indent_blankline = require "plugins.configs.essential.indent_blankline"
 local lazygit = require "plugins.configs.essential.lazygit"
 local lualine = require "plugins.configs.essential.lualine"
-local nvim_cmp = require "plugins.configs.essential.nvim_cmp"
+local cmp_set = require "plugins.configs.essential.cmp.cmp_set"
+local nvim_cmp = require "plugins.configs.essential.cmp.nvim_cmp"
 local nvim_tree = require "plugins.configs.essential.nvim_tree"
 local symbols_outline = require "plugins.configs.essential.symbols_outline"
 local trouble = require "plugins.configs.essential.trouble"
@@ -29,13 +30,14 @@ local neoscroll = require "plugins.configs.ui.neoscroll"
 ----------------------------------------------------------
 
 -- Config Object
--- `name` : Name of the plugin 
+-- `name` : Name of the plugin [Optional]
+-- `set`: Plugins to install together [Optional]
 -- `repo_path` : Plugin repo path
--- `lazy_loaded` : Plugin to be lazy loaded
+-- `lazy_loaded` : Plugin to be lazy loaded [Optional]
 -- `enabled` : Plugin enabled
--- `dependancies` : Plugin dependancies
+-- `dependancies` : Plugin dependancies [Optional]
 -- `config` : Plugin config overrides
--- `build` : Executed when a plugin is installed or updated 
+-- `build` : Executed when a plugin is installed or updated [Optional]
 -- `artifacts` : Plugin scripts to be invoked after plugin is loaded 
 
 local M  = {}
@@ -51,6 +53,7 @@ M.hlslens = hlslens
 M.indent_blankline = indent_blankline
 M.lazygit = lazygit
 M.lualine = lualine
+M.cmp_set = cmp_set
 M.nvim_cmp = nvim_cmp
 M.nvim_tree = nvim_tree
 M.symbols_outline = symbols_outline

@@ -5,7 +5,7 @@
 local config = {
   backup = false,                          
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
-  completeopt = { "menuone", "noselect" }, 
+  completeopt = { "menu", "menuone", "noselect" },
   conceallevel = 0,                        -- so that `` is visible in markdown files
   fileencoding = "utf-8",                 
   hlsearch = true,                         -- highlight all matches on previous search pattern
