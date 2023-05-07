@@ -45,6 +45,8 @@ end
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 
+vim.loader.enable() -- Cache lua files
+
 ---------------------------------------------------------------------------
 -- Disable builtin Vim plugins
 ---------------------------------------------------------------------------
