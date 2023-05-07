@@ -37,7 +37,7 @@ for key, plugin in pairs(config) do
             lazy = plugin.lazy_loaded,
             dependencies = plugin.dependencies,
             build = plugin.build,
-            config = utils.setupPlugin(plugin.name, plugin.config, plugin.artifacts)
+            config = utils.setupPlugin(plugin.name, plugin.config, plugin.configFunc, plugin.artifacts)
         })
     end
 

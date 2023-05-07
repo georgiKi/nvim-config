@@ -37,7 +37,8 @@ local neoscroll = require "plugins.configs.ui.neoscroll"
 -- `lazy_loaded` : Plugin to be lazy loaded [Optional]
 -- `enabled` : Plugin enabled
 -- `dependancies` : Plugin dependancies [Optional]
--- `config` : Plugin config overrides
+-- `config` : Plugin config overrides [Optional]
+-- `configFunc` : Plugin config overrides with dependancies and can't run setup twice [Optional]
 -- `build` : Executed when a plugin is installed or updated [Optional]
 -- `artifacts` : Plugin scripts to be invoked after plugin is loaded 
 
