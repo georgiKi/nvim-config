@@ -26,13 +26,17 @@ local kind_icons = {
   TypeParameter = "",
 }
 
+local check_backspace = function()
+  local col = vim.fn.col "." - 1
+  return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
+end
+
 
 return {
-    name = "nvim-cmp",
+    name = "cmp",
     repo_path = "hrsh7th/nvim-cmp",
     priority = 950,
     enabled = true,
-    multi = true,
     config = {
         formatting = {
             fields = { "kind", "abbr", "menu" },
@@ -59,8 +63,10 @@ return {
             }
         },
         sources = {
-            { name = 'nvim_lsp' },
-            { name = 'luasnip' },
+            { name = "nvim_lsp" },
+            { name = "buffer" },
+            { name = "luasnip"},
+            { name = "path"}
         },
     },
     artifacts = function(cmp)
@@ -71,6 +77,25 @@ return {
                 expand = function(args)
                     luasnip.lsp_expand(args.body)
                 end,
+            },
+            mappings = {
+                ["<CR>"] = cmp.mapping.confirm { select = true },
+     ["<Tab>"] = cmp.mapping(function(fallback)
+      if cmp.visible() then
+        cmp.select_next_item()
+      elseif luasnip.expandable() then
+        luasnip.expand()
+      elseif luasnip.expand_or_jumpable() then
+        luasnip.expand_or_jump()
+      elseif check_backspace() then
+        fallback()
+      else
+        fallback()
+      end
+    end, {
+      "i",
+      "s",
+    }),              
             },
             confirm_opts = {
                 behavior = cmp.ConfirmBehavior.Replace,

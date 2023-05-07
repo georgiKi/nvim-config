@@ -10,10 +10,13 @@ M.setupPlugin = function(name, config, artifactsFunc)
             local status_ok, plugin = pcall(require, name)
 
             if not status_ok then
-              return
+                print("Plugin was not loaded correctly", name)
+                return
             end
 
-            plugin.setup(config)
+            if config then
+                plugin.setup(config)
+            end
 
             if artifactsFunc then
                 artifactsFunc(plugin)

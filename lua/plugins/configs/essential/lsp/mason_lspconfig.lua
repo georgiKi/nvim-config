@@ -17,11 +17,15 @@ return {
           },
     },
     artifacts = function(plugin)
+        local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
         plugin.setup_handlers {
             -- It will be called for each installed server
             -- Can be overriden by dedicated handler
             function (server_name)
-                require("lspconfig")[server_name].setup {}
+                require("lspconfig")[server_name].setup {
+                    capabilities = capabilities
+                }
             end,
 
             -- A dedicated handler for specific server.
