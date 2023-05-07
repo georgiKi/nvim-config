@@ -57,10 +57,21 @@ return {
                 border = {'┌', '─', '┐', '│', '┘', '─', '└', '│'},
                 winhighlight = 'Normal:CmpPmenu,FloatBorder:CmpPmenuBorder,CursorLine:PmenuSel,Search:None',
             }
-        }
+        },
+        sources = {
+            { name = 'nvim_lsp' },
+            { name = 'luasnip' },
+        },
     },
     artifacts = function(cmp)
+        local luasnip = require 'luasnip'
+        luasnip.config.setup {}
         cmp.setup {
+            snippet = {
+                expand = function(args)
+                    luasnip.lsp_expand(args.body)
+                end,
+            },
             confirm_opts = {
                 behavior = cmp.ConfirmBehavior.Replace,
                 select = false,

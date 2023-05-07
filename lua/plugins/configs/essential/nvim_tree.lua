@@ -16,9 +16,9 @@ return {
        },
        hijack_directories = {
            auto_open = false
-       } 
+       }
     },
-    artifacts = function() 
+    artifacts = function()
         utils.keymap("n", "<leader>e", ":NvimTreeToggle<cr>", { desc = "File Explorer" })
         utils.keymap("n", "<leader>E", ":NvimTreeFindFile<cr>", { desc = "Find File In Explorer" })
     end

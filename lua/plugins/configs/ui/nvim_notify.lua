@@ -8,7 +8,7 @@ return {
     config = {
         background_colour = "#000000",
     },
-    artifacts = function() 
+    artifacts = function()
         utils.keymap("n", "<leader>n", ":Telescope notify<cr>", { desc = "Notify History" })
     end
 }
