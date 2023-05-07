@@ -1,7 +1,7 @@
 return {
-    set = {
-	 "L3MON4D3/LuaSnip",
-	 "rafamadriz/friendly-snippets"
-    },
-    priority = 960
+    repo_path = "L3MON4D3/LuaSnip",
+    priority = 950,
+    enabled = true,
+    dependencies = { "rafamadriz/friendly-snippets" }
 }
+
