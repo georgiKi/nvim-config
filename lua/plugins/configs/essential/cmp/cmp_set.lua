@@ -1,4 +1,5 @@
 return {
+    priority = 960,
     set = {
         "hrsh7th/cmp-buffer",
         "hrsh7th/cmp-path",

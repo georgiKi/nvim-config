@@ -52,7 +52,7 @@ return {
         lualine.setup {
            options = {
                 theme = custom_theme
-           } 
+           }
         }
     end
 }
