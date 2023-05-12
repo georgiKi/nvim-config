@@ -1,3 +1,4 @@
+local lsp_lines = require "plugins.configs.essential.lsp.lsp_lines"
 local mason = require "plugins.configs.essential.lsp.mason"
 local mason_lspconfig = require "plugins.configs.essential.lsp.mason_lspconfig"
 local nvim_lspconfig = require "plugins.configs.essential.lsp.nvim_lspconfig"
@@ -48,6 +49,7 @@ local neoscroll = require "plugins.configs.ui.neoscroll"
 local M  = {}
 
 -- Essential
+M.lsp_lines = lsp_lines
 M.mason = mason
 M.mason_lspconfig = mason_lspconfig
 M.nvim_lspconfig = nvim_lspconfig
