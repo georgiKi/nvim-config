@@ -1,6 +1,7 @@
 local lsp_lines = require "plugins.configs.essential.lsp.lsp_lines"
 local mason = require "plugins.configs.essential.lsp.mason"
 local mason_lspconfig = require "plugins.configs.essential.lsp.mason_lspconfig"
+local null_ls = require "plugins.configs.essential.lsp.null_ls"
 local nvim_lspconfig = require "plugins.configs.essential.lsp.nvim_lspconfig"
 local telescope = require "plugins.configs.essential.telescope.telescope"
 local auto_session = require "plugins.configs.essential.auto_session"
@@ -30,7 +31,6 @@ local treesitter = require "plugins.configs.ui.treesitter"
 local noice = require "plugins.configs.ui.noice"
 local neoscroll = require "plugins.configs.ui.neoscroll"
 
-
 ---------------------------------------------------------
 -- Plugins Config Map
 ----------------------------------------------------------
@@ -53,6 +53,7 @@ local M  = {}
 M.lsp_lines = lsp_lines
 M.mason = mason
 M.mason_lspconfig = mason_lspconfig
+M.null_ls = null_ls
 M.nvim_lspconfig = nvim_lspconfig
 M.telescope = telescope
 M.auto_session = auto_session
