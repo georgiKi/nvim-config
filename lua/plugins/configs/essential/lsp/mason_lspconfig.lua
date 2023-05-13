@@ -18,13 +18,18 @@ return {
     },
     artifacts = function(plugin)
         local capabilities = require("cmp_nvim_lsp").default_capabilities()
+        local handlers =  {
+            ["textDocument/hover"] =  vim.lsp.with(vim.lsp.handlers.hover, {border = "single"}),
+            ["textDocument/signatureHelp"] =  vim.lsp.with(vim.lsp.handlers.signature_help, {border = "signle"}),
+    }
 
         plugin.setup_handlers {
             -- It will be called for each installed server
             -- Can be overriden by dedicated handler
             function (server_name)
                 require("lspconfig")[server_name].setup {
-                    capabilities = capabilities
+                    capabilities = capabilities,
+                    handlers = handlers
                 }
             end,
 
