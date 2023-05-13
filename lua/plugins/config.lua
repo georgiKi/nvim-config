@@ -17,6 +17,7 @@ local nvim_tree = require "plugins.configs.essential.nvim_tree"
 local symbols_outline = require "plugins.configs.essential.symbols_outline"
 local trouble = require "plugins.configs.essential.trouble"
 
+local autopairs = require "plugins.configs.subsidiary.autopairs"
 local diffview = require "plugins.configs.subsidiary.diffview"
 local hop = require "plugins.configs.subsidiary.hop"
 local nvim_code_action_menu = require "plugins.configs.subsidiary.nvim_code_action_menu"
@@ -69,6 +70,7 @@ M.symbols_outline = symbols_outline
 M.trouble = trouble
 
 -- Subsidiary
+M.autopairs = autopairs
 M.diffview = diffview
 M.hop = hop
 M.nvim_code_action_menu = nvim_code_action_menu
