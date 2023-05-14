@@ -9,7 +9,7 @@ return {
     config = {},
     artifacts = function ()
         utils.keymap(
-            "n", 
+            "n",
             "<leader>f",
             "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>",
             { desc = "Find File" }
