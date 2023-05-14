@@ -20,6 +20,7 @@ local trouble = require "plugins.configs.essential.trouble"
 
 local autopairs = require "plugins.configs.subsidiary.autopairs"
 local diffview = require "plugins.configs.subsidiary.diffview"
+local goto_preview = require "plugins.configs.subsidiary.goto_preview"
 local hop = require "plugins.configs.subsidiary.hop"
 local nvim_code_action_menu = require "plugins.configs.subsidiary.nvim_code_action_menu"
 local which_key = require "plugins.configs.subsidiary.which_key"
@@ -73,6 +74,7 @@ M.trouble = trouble
 -- Subsidiary
 M.autopairs = autopairs
 M.diffview = diffview
+M.goto_preview = goto_preview
 M.hop = hop
 M.nvim_code_action_menu = nvim_code_action_menu
 M.which_key = which_key

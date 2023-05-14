@@ -46,8 +46,6 @@ return {
         }
 
         utils.keymap("n", "<leader>d", "<cmd>lua vim.lsp.buf.definition()<CR>", { desc = "Go To Definition" })
-        utils.keymap("n", "<leader>r", "<cmd>lua vim.lsp.buf.references()<CR>", { desc = "Go To Reference" })
         utils.keymap("n", "<leader>p", "<cmd>lua vim.lsp.buf.hover()<CR>", { desc = "Hover" })
-        utils.keymap("n", "<leader>I", "<cmd>lua vim.lsp.buf.implementation()<CR>", { desc = "Go To Implementation" })
     end
 }
