@@ -26,6 +26,7 @@ local nvim_code_action_menu = require "plugins.configs.subsidiary.nvim_code_acti
 local which_key = require "plugins.configs.subsidiary.which_key"
 local wilder = require "plugins.configs.subsidiary.wilder"
 
+local circles = require "plugins.configs.ui.circles"
 local theme = require "plugins.configs.ui.theme"
 local nvim_notify = require "plugins.configs.ui.nvim_notify"
 local treesitter = require "plugins.configs.ui.treesitter"
@@ -81,6 +82,7 @@ M.which_key = which_key
 M.wilder = wilder
 
 -- UI
+M.circles = circles
 M.theme = theme
 M.nvim_notify = nvim_notify
 M.treesitter = treesitter
