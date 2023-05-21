@@ -18,8 +18,20 @@ return {
            auto_open = false
        }
     },
-    artifacts = function()
+    artifacts = function(plugin)
         utils.keymap("n", "<leader>e", ":NvimTreeToggle<cr>", { desc = "File Explorer" })
         utils.keymap("n", "<leader>E", ":NvimTreeFindFile<cr>", { desc = "Find File In Explorer" })
+
+        local circles = require('circles')
+
+        circles.setup({ icons = { empty = '', filled = '', lsp_prefix = ''}})
+
+        plugin.setup({
+            renderer = {
+                icons = {
+                    glyphs = circles.get_nvimtree_glyphs(),
+                },
+            },
+        })
     end
 }
