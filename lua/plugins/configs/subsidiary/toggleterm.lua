@@ -6,6 +6,6 @@ return {
     enabled = true,
     config = {},
     artifacts = function()
-        utils.keymap("n", "<leader>h", ":HopWord <CR>", { desc = "Hop Over" })
+        utils.keymap("n", "<leader>m", ":ToggleTerm <CR>", { desc = "Toggle Terminal" })
     end
 }
