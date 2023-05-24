@@ -24,6 +24,7 @@ local diffview = require "plugins.configs.subsidiary.diffview"
 local goto_preview = require "plugins.configs.subsidiary.goto_preview"
 local hop = require "plugins.configs.subsidiary.hop"
 local nvim_code_action_menu = require "plugins.configs.subsidiary.nvim_code_action_menu"
+local toggleterm = require "plugins.configs.subsidiary.toggleterm"
 local which_key = require "plugins.configs.subsidiary.which_key"
 local wilder = require "plugins.configs.subsidiary.wilder"
 
@@ -80,6 +81,7 @@ M.diffview = diffview
 M.goto_preview = goto_preview
 M.hop = hop
 M.nvim_code_action_menu = nvim_code_action_menu
+M.toggleterm = toggleterm
 M.which_key = which_key
 M.wilder = wilder
 
