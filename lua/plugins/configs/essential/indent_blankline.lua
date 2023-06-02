@@ -1,12 +1,14 @@
 return {
     name = "indent_blankline",
     repo_path = "lukas-reineke/indent-blankline.nvim",
-    enabled = false,
+    enabled = true,
     config = {
+        char = "",
+        context_char = "┆",
+        space_char_blankline = " ",
         show_current_context = true,
-        show_current_context_start = true,
-        indent_blankline_show_first_indent_level = false,
-        indent_blankline_strict_tabs = true,
-    },
-    artifacts = nil
+        show_current_context_start = false,
+        max_indent_increase = 1,
+        show_trailing_blankline_indent = false
+    }
 }
