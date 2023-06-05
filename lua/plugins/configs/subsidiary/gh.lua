@@ -11,8 +11,9 @@ return {
        utils.keymap("n", "<leader>Go", ":GHOpenPR <CR>", { desc = "Open PR" })
        utils.keymap("n", "<leader>Gx", ":GHClosePR <CR>", { desc = "Close PR" })
        utils.keymap("n", "<leader>Gr", ":GHRefreshPR <CR>", { desc = "Refresh PR" })
-       utils.keymap("n", "<leader>Gc", ":GHCreateThread <CR>", { desc = "Create PR Thread" })
-       utils.keymap("n", "<leader>Gs", ":GHStartReview <CR>", { desc = "Start Review" })
-       utils.keymap("n", "<leader>Gb", ":GHSubmitReview <CR>", { desc = "Submit Review" })
+       utils.keymap("n", "<leader>Gt", ":GHCreateThread <CR>", { desc = "Create Thread" })
+       utils.keymap("n", "<leader>Gw", ":GHStartReview <CR>", { desc = "Start Review" })
+       utils.keymap("n", "<leader>Ga", ":GHApproveReview <CR>", { desc = "Approve Review" })
+       utils.keymap("n", "<leader>Gs", ":GHSubmitReview <CR>", { desc = "Submit Review" })
     end
 }
