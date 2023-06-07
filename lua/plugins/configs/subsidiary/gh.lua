@@ -13,7 +13,6 @@ return {
        utils.keymap("n", "<leader>Gr", ":GHRefreshPR <CR>", { desc = "Refresh PR" })
        utils.keymap("n", "<leader>Gt", ":GHCreateThread <CR>", { desc = "Create Thread" })
        utils.keymap("n", "<leader>Gw", ":GHStartReview <CR>", { desc = "Start Review" })
-       utils.keymap("n", "<leader>Ga", ":GHApproveReview <CR>", { desc = "Approve Review" })
        utils.keymap("n", "<leader>Gs", ":GHSubmitReview <CR>", { desc = "Submit Review" })
     end
 }

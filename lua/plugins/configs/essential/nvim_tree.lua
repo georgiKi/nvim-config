@@ -10,6 +10,8 @@ return {
         circles.setup({ icons = { empty = '', filled = '', lsp_prefix = ''}})
 
         return {
+            sync_root_with_cwd = true,
+            respect_buf_cwd = true,
             view = {
                 adaptive_size = true,
                 side = "left",
@@ -23,6 +25,10 @@ return {
             },
             hijack_directories = {
                 auto_open = false
+            },
+            update_focused_file = {
+                enable = true,
+                update_root = true
             }
         }
     end,

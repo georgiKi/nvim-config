@@ -13,6 +13,7 @@ return {
               "cssmodules_ls",
               "angularls",
               "jsonls",
+              "csharp_ls",
               "eslint"
           },
     },
