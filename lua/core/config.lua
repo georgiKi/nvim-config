@@ -49,7 +49,10 @@ vim.diagnostic.config({
     virtual_lines = false,
     virtual_text = false,
     underline = true,
-    float = { border = "rounded" }
+    float = {
+        border = "rounded",
+        width = 80
+    }
 })
 
 -- Show line diagnostics automatically in hover window
