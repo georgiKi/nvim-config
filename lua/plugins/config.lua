@@ -1,4 +1,3 @@
-local lsp_lines = require "plugins.configs.essential.lsp.lsp_lines"
 local mason = require "plugins.configs.essential.lsp.mason"
 local mason_lspconfig = require "plugins.configs.essential.lsp.mason_lspconfig"
 local null_ls = require "plugins.configs.essential.lsp.null_ls"
@@ -57,7 +56,6 @@ local neoscroll = require "plugins.configs.ui.neoscroll"
 local M  = {}
 
 -- Essential
-M.lsp_lines = lsp_lines
 M.mason = mason
 M.mason_lspconfig = mason_lspconfig
 M.null_ls = null_ls
