@@ -4,6 +4,8 @@ return {
     name = "close_buffers",
     repo_path = "kazhala/close-buffers.nvim",
     enabled = true,
+    lazy = true,
+    event = "VeryLazy",
     config = {},
     artifacts = function ()
         utils.keymap("n", "<leader>Bo", "<cmd>lua require('close_buffers').wipe({ type = 'other' }) <CR>", { desc = "Wipe all buffers except the current" })

@@ -4,6 +4,8 @@ return {
     name = "telescope",
     repo_path = "nvim-telescope/telescope.nvim",
     enabled = true,
+    lazy = true,
+    event = "VeryLazy",
     priority = 950,
     dependencies = "nvim-lua/plenary.nvim",
     config = {},

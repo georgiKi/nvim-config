@@ -2,6 +2,8 @@ return {
     name = "noice",
     repo_path = "folke/noice.nvim",
     enabled = true,
+    lazy = true,
+    event = "VeryLazy",
     dependencies = {
         "MunifTanjim/nui.nvim",
         "rcarriga/nvim-notify"

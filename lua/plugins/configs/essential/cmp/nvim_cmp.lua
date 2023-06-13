@@ -31,6 +31,8 @@ return {
     repo_path = "hrsh7th/nvim-cmp",
     priority = 950,
     enabled = true,
+    lazy = true,
+    event = "VeryLazy",
     configFunc = function(cmp)
         require("luasnip/loaders/from_vscode").lazy_load()
 

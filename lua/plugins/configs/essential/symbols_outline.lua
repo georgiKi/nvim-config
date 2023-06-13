@@ -4,6 +4,8 @@ return {
     name = "symbols-outline",
     repo_path = "simrat39/symbols-outline.nvim",
     enabled = true,
+    lazy = true,
+    event = "VeryLazy",
     config = {
         width = 15,
         show_symbol_details = false

@@ -4,6 +4,8 @@ return {
     name = "trouble",
     repo_path = "folke/trouble.nvim",
     enabled = true,
+    lazy = true,
+    event = "VeryLazy",
     dependencies = "kyazdani42/nvim-web-devicons",
     config = {},
     artifacts = function()

@@ -34,7 +34,8 @@ for key, plugin in pairs(config) do
             plugin.repo_path,
             priority = plugin.priority,
             enabled = plugin.enabled,
-            lazy = plugin.lazy_loaded,
+            lazy = plugin.lazy,
+            event = plugin.event,
             dependencies = plugin.dependencies,
             build = plugin.build,
             config = utils.setupPlugin(plugin.name, plugin.config, plugin.configFunc, plugin.artifacts)

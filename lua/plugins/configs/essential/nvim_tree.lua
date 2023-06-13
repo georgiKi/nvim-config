@@ -4,6 +4,8 @@ return {
     name = "nvim-tree",
     repo_path = "kyazdani42/nvim-tree.lua",
     enabled = true,
+    lazy = true,
+    event = "VeryLazy",
     dependencies = "kyazdani42/nvim-web-devicons",
     configFunc = function()
         local circles = require('circles')

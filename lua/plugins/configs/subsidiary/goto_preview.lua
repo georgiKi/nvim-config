@@ -4,6 +4,8 @@ return {
     name = "goto-preview",
     repo_path = "rmagatti/goto-preview",
     enabled = true,
+    lazy = true,
+    event = "VeryLazy",
     config = {},
     artifacts = function ()
         utils.keymap("n", "<leader>D", "<cmd>lua require('goto-preview').goto_preview_definition() <CR>", { desc = "Preview Definition" })

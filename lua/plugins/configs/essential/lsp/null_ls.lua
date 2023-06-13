@@ -3,7 +3,7 @@ return {
     name = "null-ls",
     repo_path = "jose-elias-alvarez/null-ls.nvim",
     priority = 900,
-    enabled = true,
+    enabled = false,
     config = {
         on_attach = function(client, bufnr)
             if client.supports_method("textDocument/formatting") then

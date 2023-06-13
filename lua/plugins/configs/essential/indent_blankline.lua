@@ -2,6 +2,8 @@ return {
     name = "indent_blankline",
     repo_path = "lukas-reineke/indent-blankline.nvim",
     enabled = true,
+    lazy = true,
+    event = "VeryLazy",
     config = {
         char = "",
         context_char = "┆",

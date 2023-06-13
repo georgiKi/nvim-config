@@ -2,6 +2,8 @@ return {
     name = "lualine",
     repo_path = "nvim-lualine/lualine.nvim",
     enabled = true,
+    lazy = true,
+    event = "VeryLazy",
     config = {
         options = {
             icons_enabled = true,

@@ -2,6 +2,8 @@ return {
     name = "nvim-autopairs",
     repo_path = "windwp/nvim-autopairs",
     enabled = true,
+    lazy = true,
+    event = "VeryLazy",
     config = {
         check_ts = true,
         ts_config = {

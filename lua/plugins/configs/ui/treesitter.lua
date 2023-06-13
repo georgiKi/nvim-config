@@ -3,6 +3,8 @@ return {
     repo_path = "nvim-treesitter/nvim-treesitter",
     priority = 950,
     enabled = true,
+    lazy = true,
+    event = "VeryLazy",
     config = {
         -- A list of parser names, or "all"
         ensure_installed = { "c", "c_sharp", "lua", "vim", "regex", "javascript", "typescript", "tsx", "css", "scss", "html", "json" },

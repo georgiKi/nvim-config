@@ -1,5 +1,7 @@
 return {
     priority = 960,
+    lazy = true,
+    event = "VeryLazy",
     set = {
         "hrsh7th/cmp-buffer",
         "hrsh7th/cmp-path",

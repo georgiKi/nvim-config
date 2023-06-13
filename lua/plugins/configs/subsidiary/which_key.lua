@@ -2,6 +2,8 @@ return {
     name = "which-key",
     repo_path = "folke/which-key.nvim",
     enabled = true,
+    lazy = true,
+    event = "VeryLazy",
     config = {
         icons = {
             breadcrumb = "»", -- symbol used in the command line area that shows your active key combo
