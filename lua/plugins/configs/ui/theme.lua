@@ -6,6 +6,8 @@ return {
     repo_path = "rebelot/kanagawa.nvim",
     priority = 1000,
     enabled = true,
+    lazy = true,
+    event = "UIEnter",
     config = {
         undercurl = true,           -- enable undercurls
         commentStyle = { italic = true },

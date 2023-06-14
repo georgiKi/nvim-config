@@ -4,6 +4,8 @@ return {
     name = "mason-lspconfig", repo_path = "williamboman/mason-lspconfig.nvim",
     priority = 890,
     enabled = true,
+    lazy = true,
+    event = "VeryLazy",
     config = {
           ensure_installed = {
               "lua_ls",
