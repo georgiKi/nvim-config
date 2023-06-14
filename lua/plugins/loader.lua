@@ -25,7 +25,7 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {}
 
-for key, plugin in pairs(config) do
+for _, plugin in pairs(config) do
 
     if plugin.set then
         table.insert(plugins, plugin.set)
