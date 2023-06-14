@@ -3,6 +3,8 @@ local utils = require "core.utils"
 return {
     repo_path = "ldelossa/gh.nvim",
     enabled = true,
+    lazy = true,
+    event = "UIEnter",
     dependencies = { "ldelossa/litee.nvim" },
     artifacts = function ()
        require('litee.lib').setup()
