@@ -52,7 +52,7 @@ local neoscroll = require "plugins.configs.ui.neoscroll"
 -- `config` : Plugin config overrides [Optional]
 -- `configFunc` : Plugin config overrides with dependancies and can't run setup twice [Optional]
 -- `build` : Executed when a plugin is installed or updated [Optional]
--- `artifacts` : Plugin scripts to be invoked after plugin is loaded 
+-- `artifacts` : Plugin scripts to be invoked after plugin is loaded [Optional] 
 
 local M  = {}
 

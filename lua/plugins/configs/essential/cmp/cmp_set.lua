@@ -1,6 +1,7 @@
 return {
     priority = 960,
     lazy = true,
+    enabled = true,
     event = "VeryLazy",
     set = {
         "hrsh7th/cmp-buffer",
