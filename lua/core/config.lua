@@ -34,6 +34,7 @@ local config = {
   wrap = false,                            -- display lines as one long line
   scrolloff = 8,
   sidescrolloff = 8,
+  shadafile = "NONE"
 }
 
 vim.opt.shortmess:append "c"
