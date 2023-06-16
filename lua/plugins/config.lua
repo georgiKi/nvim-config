@@ -30,6 +30,7 @@ local toggleterm = require "plugins.configs.subsidiary.toggleterm"
 local which_key = require "plugins.configs.subsidiary.which_key"
 local wilder = require "plugins.configs.subsidiary.wilder"
 
+local bionic = require "plugins.configs.ui.bionic"
 local circles = require "plugins.configs.ui.circles"
 local theme = require "plugins.configs.ui.theme"
 local nvim_notify = require "plugins.configs.ui.nvim_notify"
@@ -91,6 +92,7 @@ M.which_key = which_key
 M.wilder = wilder
 
 -- UI
+M.bionic = bionic
 M.circles = circles
 M.theme = theme
 M.nvim_notify = nvim_notify
