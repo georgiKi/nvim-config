@@ -100,5 +100,19 @@ M.treesitter = treesitter
 M.noice = noice
 M.neoscroll = neoscroll
 
+-- TODO: Move it to a separate file
+-- Buildin Plugins
+M.disabled_built_in_plugins = {
+    enabled = false,
+    "gzip",
+    "matchit",
+    "matchparen",
+    "netrwPlugin",
+    "tarPlugin",
+    "tohtml",
+    "tutor",
+    "zipPlugin"
+}
+
 return M
 

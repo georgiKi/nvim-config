@@ -51,5 +51,8 @@ for _, plugin in pairs(config) do
     end
 end
 
-require("lazy").setup(plugins, { ui = { border = "single" } })
+require("lazy").setup(plugins, {
+    ui = { border = "single" },
+    performance = { rtp = { disabled_plugins = config.disabled_built_in_plugins }},
+})
 
