@@ -51,8 +51,25 @@ for _, plugin in pairs(config) do
     end
 end
 
+-- TODO: Move it to a separate file
+local disabled_built_in_plugins = {
+    "gzip",
+    "matchit",
+    "matchparen",
+    "netrwPlugin",
+    "tarPlugin",
+    "tohtml",
+    "tutor",
+    "zipPlugin",
+    "shada",
+    "spellfile",
+    "rplugin",
+    "man",
+    "nvim"
+}
+
 require("lazy").setup(plugins, {
     ui = { border = "single" },
-    performance = { rtp = { disabled_plugins = config.disabled_built_in_plugins }},
+    performance = { rtp = { disabled_plugins = disabled_built_in_plugins }},
 })
 
