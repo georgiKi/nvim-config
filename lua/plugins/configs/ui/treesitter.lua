@@ -5,6 +5,7 @@ return {
     enabled = true,
     lazy = true,
     event = "VeryLazy",
+    dependencies = { "windwp/nvim-ts-autotag" },
     config = {
         -- A list of parser names, or "all"
         ensure_installed = { "c", "c_sharp", "lua", "vim", "regex", "javascript", "typescript", "tsx", "css", "scss", "html", "json" },
@@ -31,6 +32,9 @@ return {
                 -- Using this option may slow down your editor, and you may see some duplicate highlights.
                 -- Instead of true it can also be a list of languages
             additional_vim_regex_highlighting = { "html" },
+        },
+        autotag = {
+            enable = true
         }
     },
     artifacts =  nil
