@@ -5,9 +5,9 @@ return {
     lazy = true,
     event = "VeryLazy",
     config = {
-        'javascript';
+        "javascript";
         css = { rgb_fn = true };
         scss = { rgb_fn = true };
-        html = { mode = 'foreground' };
+        html = { mode = "foreground" };
     }
 }
