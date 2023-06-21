@@ -7,13 +7,6 @@ return {
     config = {
         options = {
             icons_enabled = true,
-            disabled_filetypes = {
-                statusline = {},
-                winbar = {},
-            },
-            ignore_focus = {},
-            always_divide_middle = true,
-            globalstatus = false,
             refresh = {
                 statusline = 1000,
                 tabline = 1000,
@@ -35,11 +28,7 @@ return {
             lualine_x = {'location'},
             lualine_y = {},
             lualine_z = {}
-        },
-        tabline = {},
-        winbar = {},
-        inactive_winbar = {},
-        extensions = {}
+        }
     },
     artifacts = function(lualine)
         local custom_theme = require'lualine.themes.everforest'
