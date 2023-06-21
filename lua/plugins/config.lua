@@ -47,7 +47,6 @@ do return {
     -- Ui
     require (ui .. "bionic"),
     require (ui .. "circles"),
-    require (ui .. "colorful-winsep"),
     require (ui .. "theme"),
     require (ui .. "nvim_notify"),
     require (ui .. "treesitter"),
