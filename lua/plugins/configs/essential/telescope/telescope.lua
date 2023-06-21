@@ -17,6 +17,5 @@ return {
             { desc = "Find File" }
         )
         utils.keymap("n", "<leader>i", ":Telescope live_grep<CR>", { desc = "Live Grep" })
-        utils.keymap("n", "<leader>b", ":Telescope buffers<CR>", { desc = "Buffers" })
     end
 }
