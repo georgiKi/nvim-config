@@ -31,6 +31,7 @@ do return {
     -- Subsidiary
     require (subsidiary .. "autopairs"),
     require (subsidiary .. "close_buffers"),
+    require (subsidiary .. "dashboard"),
     require (subsidiary .. "diffview"),
     require (subsidiary .. "dropbar"),
     require (subsidiary .. "gh"),
