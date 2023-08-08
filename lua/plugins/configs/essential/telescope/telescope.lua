@@ -16,6 +16,6 @@ return {
             "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>",
             { desc = "Find File" }
         )
-        utils.keymap("n", "<leader>i", ":Telescope live_grep<CR>", { desc = "Live Grep" })
+        utils.keymap("n", "<leader>i", ":Telescope lsp_dynamic_workspace_symbols<CR>", { desc = "Search Symbols" })
     end
 }
