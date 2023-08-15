@@ -3,7 +3,7 @@ local utils = require "core.utils"
 return {
     name = "notify",
     repo_path = "rcarriga/nvim-notify",
-    enabled = true,
+    enabled = false,
     lazy = true,
     event = "VeryLazy",
     priority = 900,
