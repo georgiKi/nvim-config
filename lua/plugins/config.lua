@@ -44,6 +44,7 @@ do return {
     require (subsidiary .. "reach"),
     require (subsidiary .. "which_key"),
     require (subsidiary .. "wilder"),
+    require (subsidiary .. "winshift"),
 
     -- Ui
     require (ui .. "bionic"),
