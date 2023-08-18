@@ -12,7 +12,6 @@ local utils = require "core.utils"
 --   term_mode = "t",
 --   command_mode = "c",
 
-
 -- Leader key
 utils.keymap("", "§", "<Nop>")
 
