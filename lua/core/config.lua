@@ -62,3 +62,8 @@ vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {f
 
 vim.loader.enable() -- Cache lua files
 
+
+-- Highlight word occurences under cursor
+vim.cmd[[autocmd CursorHold * lua vim.lsp.buf.document_highlight()]]
+vim.cmd[[autocmd CursorHoldI * lua vim.lsp.buf.document_highlight()]]
+vim.cmd[[autocmd CursorMoved * lua vim.lsp.buf.clear_references()]]
