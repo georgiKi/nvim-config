@@ -40,6 +40,7 @@ do return {
     require (subsidiary .. "neoformat"),
     require (subsidiary .. "nvim-colorizer"),
     require (subsidiary .. "nvim_code_action_menu"),
+    require (subsidiary .. "nvim_treesitter_context"),
     require (subsidiary .. "toggleterm"),
     require (subsidiary .. "reach"),
     require (subsidiary .. "which_key"),
