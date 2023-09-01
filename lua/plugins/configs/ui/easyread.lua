@@ -1,4 +1,3 @@
-
 return {
     name = "easyread",
     repo_path = "JellyApple102/easyread.nvim",

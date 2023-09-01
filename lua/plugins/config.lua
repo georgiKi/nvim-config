@@ -48,8 +48,9 @@ do return {
     require (subsidiary .. "winshift"),
 
     -- Ui
-    require (ui .. "easyread"),
     require (ui .. "circles"),
+    require (ui .. "easyread"),
+    require (ui .. "neodim"),
     require (ui .. "theme"),
     require (ui .. "nvim_notify"),
     require (ui .. "treesitter"),
