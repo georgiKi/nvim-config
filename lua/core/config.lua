@@ -2,8 +2,7 @@
 -- Vim Configuration
 ---------------------------------------------------------------------------
 
-
-  local config = {
+local config = {
   backup = false,
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
   completeopt = { "menu", "menuone", "noselect" },
