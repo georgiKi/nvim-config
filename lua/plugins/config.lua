@@ -25,6 +25,7 @@ do return {
     require (essential .. "cmp.nvim_cmp"),
     require (essential .. "cmp.snippets_set"),
     require (essential .. "nvim_tree"),
+    require (essential .. "spectre"),
     require (essential .. "symbols_outline"),
     require (essential .. "trouble"),
 
