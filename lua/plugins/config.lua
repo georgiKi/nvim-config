@@ -39,6 +39,7 @@ do return {
     require (subsidiary .. "goto_preview"),
     require (subsidiary .. "hop"),
     require (subsidiary .. "neoformat"),
+    require (subsidiary .. "neotest"),
     require (subsidiary .. "nvim-colorizer"),
     require (subsidiary .. "nvim_code_action_menu"),
     require (subsidiary .. "nvim_treesitter_context"),
