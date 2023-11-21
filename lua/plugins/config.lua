@@ -35,6 +35,7 @@ do return {
     require (subsidiary .. "dashboard"),
     require (subsidiary .. "diffview"),
     require (subsidiary .. "dropbar"),
+    require (subsidiary .. "garbage-day"),
     require (subsidiary .. "gh"),
     require (subsidiary .. "goto_preview"),
     require (subsidiary .. "hop"),
