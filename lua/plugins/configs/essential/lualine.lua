@@ -9,7 +9,7 @@ return {
             icons_enabled = true,
             component_separators = '|',
             section_separators = { left = '', right = '' },
-            disabled_filetypes = { 'NvimTree' },
+            disabled_filetypes = { 'NvimTree', 'Outline' },
             refresh = {
                 statusline = 1000,
                 tabline = 1000,
