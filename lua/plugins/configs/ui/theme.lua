@@ -46,7 +46,7 @@ return {
         },
         overrides = function ()
             return {
-                WinSeparator = { fg = "#1F1F28" },
+                WinSeparator = { fg = "#24242e" },
             }
         end
     },
