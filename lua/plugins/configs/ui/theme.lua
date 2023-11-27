@@ -52,6 +52,8 @@ return {
     },
     artifacts = function()
         vim.cmd("colorscheme kanagawa")
+        vim.cmd("highlight! link FloatBorder Normal")
+        vim.cmd("highlight! link NormalFloat Normal")
         vim.opt.fillchars:append { eob = " " }
     end
 }

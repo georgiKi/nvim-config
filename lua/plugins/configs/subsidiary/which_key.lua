@@ -17,7 +17,7 @@ return {
         },
 
         window = {
-            border = "single", -- none/single/double/shadow
+            border = "rounded", -- none/single/double/shadow
         },
 
         layout = {
