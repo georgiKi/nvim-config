@@ -7,6 +7,9 @@ return {
     config = {
         options = {
             icons_enabled = true,
+            component_separators = '|',
+            section_separators = { left = '', right = '' },
+            disabled_filetypes = { 'NvimTree' },
             refresh = {
                 statusline = 1000,
                 tabline = 1000,
@@ -14,22 +17,26 @@ return {
             }
         },
         sections = {
-            lualine_a = {'mode'},
-            lualine_b = {'diff', 'diagnostics'},
-            lualine_c = {'filename'},
-            lualine_x = {'branch', 'filetype'},
-            lualine_y = {},
-            lualine_z = {'location'}
-        },
-        inactive_sections = {
-            lualine_a = {},
+            lualine_a = {
+              { 'mode', separator = { left = '' }, right_padding = 2 },
+            },
+            lualine_b = { 'filename', 'branch' },
+            lualine_c = {},
+            lualine_x = {},
+            lualine_y = { 'filetype' },
+            lualine_z = {
+              { 'location', separator = { right = '' }, left_padding = 2 },
+            },
+          },
+          inactive_sections = {
+            lualine_a = { 'filename' },
             lualine_b = {},
-            lualine_c = {'filename'},
-            lualine_x = {'location'},
+            lualine_c = {},
+            lualine_x = {},
             lualine_y = {},
-            lualine_z = {}
-        }
-    },
+            lualine_z = { 'location' },
+          },
+  },
     artifacts = function(lualine)
         local custom_theme = require'lualine.themes.everforest'
 
@@ -42,8 +49,8 @@ return {
 
         lualine.setup {
            options = {
-                theme = custom_theme
+                theme = custom_theme,
            }
-        }
+       }
     end
 }
