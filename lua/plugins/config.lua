@@ -17,6 +17,7 @@ do return {
     require (essential .. "telescope.telescope"),
     require (essential .. "auto_session"),
     require (essential .. "comment"),
+    require (essential .. "copilot"),
     require (essential .. "gitsigns"),
     require (essential .. "hlslens"),
     require (essential .. "indent_blankline"),
