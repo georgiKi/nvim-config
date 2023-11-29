@@ -48,7 +48,6 @@ return {
             -- end
         }
 
-        utils.keymap("n", "<leader>db", "<c-o>", { desc = "Back To Previous File" })
         utils.keymap("n", "<leader>p", "<cmd>lua vim.lsp.buf.hover()<CR>", { desc = "Hover" })
     end
 }

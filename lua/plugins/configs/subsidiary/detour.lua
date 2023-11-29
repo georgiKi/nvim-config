@@ -6,6 +6,7 @@ return {
     lazy = true,
     event = "VeryLazy",
     artifacts = function ()
-       utils.keymap("n", "<leader>dd", "<cmd>lua require('detour').Detour() vim.lsp.buf.definition()<CR>", { desc = "Go To Definition" })
+        utils.keymap("n", "<leader>dd", "<cmd>lua require('detour').Detour() vim.lsp.buf.definition()<CR>", { desc = "Go To Definition" })
+        utils.keymap("n", "<leader>db", "<cmd> q <CR>", { desc = "Back To Previous File" })
     end
 }
