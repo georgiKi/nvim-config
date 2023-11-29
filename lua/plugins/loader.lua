@@ -69,7 +69,7 @@ local disabled_built_in_plugins = {
 }
 
 require("lazy").setup(plugins, {
-    ui = { border = "single" },
+    ui = { border = "rounded" },
     performance = { rtp = { disabled_plugins = disabled_built_in_plugins }},
 })
 
