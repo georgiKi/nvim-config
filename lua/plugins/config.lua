@@ -13,6 +13,7 @@ do return {
     require (essential .. "lsp.mason_lspconfig"),
     require (essential .. "lsp.null_ls"),
     require (essential .. "lsp.nvim_lspconfig"),
+    require (essential .. "lsp.typescript_tools"),
     require (essential .. "telescope.telescope"),
     require (essential .. "auto_session"),
     require (essential .. "comment"),

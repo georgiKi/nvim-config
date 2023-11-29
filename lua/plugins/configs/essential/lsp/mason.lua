@@ -6,6 +6,5 @@ return {
     lazy = true,
     event = "UIEnter",
     config = {},
-    build = ":MasonUpdate",
-    artifacts = nil
+    build = ":MasonUpdate"
 }
