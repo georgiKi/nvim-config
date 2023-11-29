@@ -66,3 +66,14 @@ vim.loader.enable() -- Cache lua files
 vim.cmd[[autocmd CursorHold * lua vim.lsp.buf.document_highlight()]]
 vim.cmd[[autocmd CursorHoldI * lua vim.lsp.buf.document_highlight()]]
 vim.cmd[[autocmd CursorMoved * lua vim.lsp.buf.clear_references()]]
+
+-- Fold settings
+vim.wo.foldmethod = "expr"
+vim.wo.foldexpr = "nvim_treesitter#foldexpr()"
+vim.wo.foldtext =
+    [[substitute(getline(v:foldstart),'\\t',repeat('\ ',&tabstop),'g').'...'.trim(getline(v:foldend)) ]]
+vim.wo.fillchars = "fold: "
+vim.wo.foldnestmax = 3
+vim.wo.foldminlines = 1
+vim.wo.foldlevel = 99
+
