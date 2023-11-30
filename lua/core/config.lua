@@ -58,7 +58,7 @@ vim.diagnostic.config({
 
 -- Diagnostics automatically on hover
 vim.o.updatetime = 250
-vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
+vim.cmd [[autocmd CursorHold * lua vim.diagnostic.open_float(nil, {focus=false})]]
 
 vim.loader.enable() -- Cache lua files
 

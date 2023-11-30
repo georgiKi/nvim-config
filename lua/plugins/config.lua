@@ -24,6 +24,7 @@ do return {
     require (essential .. "lazygit"),
     require (essential .. "lualine"),
     require (essential .. "cmp.cmp_set"),
+    require (essential .. "cmp.copilot_cmp"),
     require (essential .. "cmp.nvim_cmp"),
     require (essential .. "cmp.snippets_set"),
     require (essential .. "nvim_tree"),

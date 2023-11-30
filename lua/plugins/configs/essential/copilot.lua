@@ -9,7 +9,7 @@ return {
             enabled = false
         },
         suggestion = {
-            auto_trigger = true
+            enabled = false
         }
     }
 }

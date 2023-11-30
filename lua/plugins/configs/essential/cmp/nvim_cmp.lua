@@ -1,29 +1,30 @@
 local kind_icons = {
-  Text = "",
-  Method = "m",
-  Function = "",
-  Constructor = "",
-  Field = "",
-  Variable = "",
-  Class = "",
-  Interface = "",
-  Module = "",
-  Property = "",
-  Unit = "",
-  Value = "",
-  Enum = "",
-  Keyword = "",
-  Snippet = "",
-  Color = "",
-  File = "",
-  Reference = "",
-  Folder = "",
-  EnumMember = "",
-  Constant = "",
-  Struct = "",
-  Event = "",
-  Operator = "",
-  TypeParameter = "",
+    Text = "",
+    Method = "m",
+    Function = "󰊕",
+    Constructor = "",
+    Field = "",
+    Variable = "",
+    Class = "",
+    Interface = "",
+    Module = "",
+    Property = "",
+    Unit = "",
+    Value = "",
+    Enum = "",
+    Keyword = "",
+    Snippet = "",
+    Color = "",
+    File = "",
+    Reference = "",
+    Folder = "",
+    EnumMember = "",
+    Constant = "",
+    Struct = "",
+    Event = "",
+    Operator = "",
+    TypeParameter = "",
+    Copilot = "󰚩"
 }
 
 return {
@@ -45,6 +46,7 @@ return {
                 format = function(entry, vim_item)
                     vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
                     vim_item.menu = ({
+                        copilot = "[Copilot]",
                         nvim_lsp = "[Lsp]",
                         luasnip = "[Snip]",
                         buffer = "[Buf]",
@@ -55,14 +57,15 @@ return {
             },
             window = {
                 documentation = {
-                    border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" }
+                    border = "rounded",
                 },
                 completion = {
-                    border = {'┌', '─', '┐', '│', '┘', '─', '└', '│'},
+                    border = "rounded",
                     winhighlight = 'Normal:CmpPmenu,FloatBorder:CmpPmenuBorder,CursorLine:PmenuSel,Search:None',
                 }
             },
             sources = {
+                { name = "copilot" },
                 { name = "nvim_lsp" },
                 { name = "buffer" },
                 { name = "luasnip"},
