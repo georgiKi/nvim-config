@@ -23,6 +23,5 @@ return {
         layout = {
             spacing = 6, -- spacing between columns
         },
-    },
-    artifacts = nil
+    }
 }

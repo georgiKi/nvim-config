@@ -6,6 +6,5 @@ return {
     event = "VeryLazy",
     config = {
         modes = {':', '/', '?'}
-    },
-    artifacts = nil
+    }
 }

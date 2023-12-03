@@ -4,6 +4,5 @@ return {
     enabled = true,
     lazy = true,
     event = "VeryLazy",
-    config = {},
-    artifacts = nil
+    config = {}
 }

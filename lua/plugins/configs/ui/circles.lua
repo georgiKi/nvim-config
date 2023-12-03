@@ -5,6 +5,5 @@ return {
     lazy = true,
     event = "VeryLazy",
     dependencies = { "kyazdani42/nvim-web-devicons" },
-    config = {},
-    artifacts = nil
+    config = {}
 }
