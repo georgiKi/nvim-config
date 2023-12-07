@@ -1,6 +1,5 @@
 return {
     repo_path = "Bekaboo/dropbar.nvim",
-    enabled = false,
-    artifacts = nil
+    enabled = false
 }
 

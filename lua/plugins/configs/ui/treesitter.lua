@@ -36,6 +36,5 @@ return {
         autotag = {
             enable = true
         }
-    },
-    artifacts =  nil
+    }
 }
