@@ -1,5 +1,5 @@
 local kind_icons = {
-    Text = "",
+    Text = " ",
     Method = "m",
     Function = "󰊕",
     Constructor = "",
@@ -15,15 +15,15 @@ local kind_icons = {
     Keyword = "",
     Snippet = "",
     Color = "",
-    File = "",
+    File = " ",
     Reference = "",
-    Folder = "",
+    Folder = " ",
     EnumMember = "",
-    Constant = "",
+    Constant = " ",
     Struct = "",
     Event = "",
-    Operator = "",
-    TypeParameter = "",
+    Operator = " ",
+    TypeParameter = " ",
     Copilot = "󰚩"
 }
 
