@@ -16,6 +16,7 @@ do return {
     require (essential .. "lsp.typescript_tools"),
     require (essential .. "telescope.telescope"),
     require (essential .. "auto_session"),
+    require (essential .. "codeium"),
     require (essential .. "comment"),
     require (essential .. "copilot"),
     require (essential .. "gitsigns"),

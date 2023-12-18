@@ -24,7 +24,7 @@ local kind_icons = {
     Event = "",
     Operator = " ",
     TypeParameter = " ",
-    Copilot = "󰚩"
+    Codeium = ""
 }
 
 return {
@@ -46,7 +46,7 @@ return {
                 format = function(entry, vim_item)
                     vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
                     vim_item.menu = ({
-                        copilot = "[Copilot]",
+                        codeium = "[Codeium]",
                         nvim_lsp = "[Lsp]",
                         luasnip = "[Snip]",
                         buffer = "[Buf]",
@@ -65,7 +65,7 @@ return {
                 }
             },
             sources = {
-                { name = "copilot" },
+                { name = "codeium" },
                 { name = "nvim_lsp" },
                 { name = "buffer" },
                 { name = "luasnip"},
