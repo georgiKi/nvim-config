@@ -1,7 +1,7 @@
 return {
     name = "copilot",
     repo_path = "zbirenbaum/copilot.lua",
-    enabled = true,
+    enabled = false,
     lazy = true,
     event = "VeryLazy",
     config = {

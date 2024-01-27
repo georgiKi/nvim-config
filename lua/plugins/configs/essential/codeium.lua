@@ -6,7 +6,7 @@ return {
         "hrsh7th/nvim-cmp",
     },
     enabled = true,
-    lazy = false,
+    lazy = true,
     event = "VeryLazy",
     config = {}
 }
