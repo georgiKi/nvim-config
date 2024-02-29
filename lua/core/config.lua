@@ -60,7 +60,8 @@ vim.diagnostic.config({
 vim.o.updatetime = 250
 vim.cmd [[autocmd CursorHold * lua vim.diagnostic.open_float(nil, {focus=false})]]
 
-vim.loader.enable() -- Cache lua files
+-- Cache lua files
+vim.loader.enable()
 
 -- Highlight word occurences under cursor
 vim.cmd[[autocmd CursorHold * lua vim.lsp.buf.document_highlight()]]
