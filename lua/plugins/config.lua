@@ -48,6 +48,7 @@ do return {
     require (subsidiary .. "nvim-colorizer"),
     require (subsidiary .. "nvim_code_action_menu"),
     require (subsidiary .. "nvim_treesitter_context"),
+    require (subsidiary .. "paren_hint"),
     require (subsidiary .. "toggleterm"),
     require (subsidiary .. "triptych"),
     require (subsidiary .. "reach"),
