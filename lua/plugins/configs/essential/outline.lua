@@ -1,8 +1,8 @@
 local utils = require "core.utils"
 
 return {
-    name = "symbols-outline",
-    repo_path = "simrat39/symbols-outline.nvim",
+    name = "outline",
+    repo_path = "hedyhli/outline.nvim",
     enabled = true,
     lazy = true,
     event = "VeryLazy",
@@ -11,6 +11,6 @@ return {
         show_symbol_details = false
     },
     artifacts = function() 
-        utils.keymap("n", "<leader>o", ":SymbolsOutline<cr>", { desc = "Outline Tree" })
+        utils.keymap("n", "<leader>o", ":Outline<cr>", { desc = "Outline Tree" })
     end
 }
