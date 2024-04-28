@@ -33,6 +33,7 @@ do return {
 
     -- Subsidiary
     require (subsidiary .. "autopairs"),
+    require (subsidiary .. "blame"),
     require (subsidiary .. "close_buffers"),
     require (subsidiary .. "dashboard"),
     require (subsidiary .. "detour"),
