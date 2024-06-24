@@ -2,7 +2,7 @@ local utils = require "core.utils"
 
 return {
     repo_path = "ldelossa/gh.nvim",
-    enabled = true,
+    enabled = false,
     lazy = true,
     event = "UIEnter",
     dependencies = { "ldelossa/litee.nvim" },

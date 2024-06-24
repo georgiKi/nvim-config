@@ -1,6 +1,6 @@
 return {
-    name = "paren-hint",
-    repo_path = "briangwaltney/paren-hint.nvim",
+    name = "mini.ai",
+    repo_path = "echasnovski/mini.ai",
     enabled = true,
     lazy = true,
     event = "VeryLazy",

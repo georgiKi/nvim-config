@@ -5,7 +5,7 @@ return {
         "nvim-lua/plenary.nvim",
         "hrsh7th/nvim-cmp",
     },
-    enabled = true,
+    enabled = false,
     lazy = true,
     event = "VeryLazy",
     config = {}

@@ -1,6 +1,6 @@
 return {
     repo_path = "sbdchd/neoformat",
-    enabled = true,
+    enabled = false,
     lazy = true,
     event = "VeryLazy"
 }

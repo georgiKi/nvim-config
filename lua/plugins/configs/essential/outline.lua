@@ -10,7 +10,7 @@ return {
         width = 15,
         show_symbol_details = false
     },
-    artifacts = function() 
+    artifacts = function()
         utils.keymap("n", "<leader>o", ":Outline<cr>", { desc = "Outline Tree" })
     end
 }

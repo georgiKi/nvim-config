@@ -7,14 +7,14 @@ local utils = require "plugins.utils"
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable",
-    lazypath,
-  })
+    vim.fn.system({
+        "git",
+        "clone",
+        "--filter=blob:none",
+        "https://github.com/folke/lazy.nvim.git",
+        "--branch=stable",
+        lazypath,
+    })
 end
 
 vim.opt.rtp:prepend(lazypath)
@@ -28,14 +28,14 @@ local plugins = {}
 for _, plugin in pairs(config) do
     if plugin.set then
         for _, repo_path in ipairs(plugin.set) do
-           table.insert(plugins, {
+            table.insert(plugins, {
                 repo_path,
                 priority = plugin.priority,
                 enabled = plugin.enabled,
                 lazy = plugin.lazy,
                 event = plugin.event,
                 build = plugin.build,
-           })
+            })
         end
     else
         table.insert(plugins, {
@@ -70,6 +70,5 @@ local disabled_built_in_plugins = {
 
 require("lazy").setup(plugins, {
     ui = { border = "rounded" },
-    performance = { rtp = { disabled_plugins = disabled_built_in_plugins }},
+    performance = { rtp = { disabled_plugins = disabled_built_in_plugins } },
 })
-

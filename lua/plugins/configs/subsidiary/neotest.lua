@@ -1,7 +1,7 @@
 return {
     name = "neotest",
     repo_path = "nvim-neotest/neotest",
-    enabled = true,
+    enabled = false,
     lazy = true,
     event = "VeryLazy",
     dependencies = {
@@ -10,16 +10,16 @@ return {
         "antoinemadec/FixCursorHold.nvim",
         "haydenmeade/neotest-jest"
     },
-    configFunc = function ()
-       return {
+    configFunc = function()
+        return {
             adapters = {
                 require("neotest-jest")({
-                  jestCommand = "npm test --",
-                  jestConfigFile = "custom.jest.config.ts",
-                  env = { CI = true },
-                  cwd = function()
-                    return vim.fn.getcwd()
-                  end,
+                    jestCommand = "npm test --",
+                    jestConfigFile = "custom.jest.config.ts",
+                    env = { CI = true },
+                    cwd = function()
+                        return vim.fn.getcwd()
+                    end,
                 }),
             }
         }

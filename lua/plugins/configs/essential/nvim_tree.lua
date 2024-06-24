@@ -9,19 +9,19 @@ return {
     dependencies = "kyazdani42/nvim-web-devicons",
     configFunc = function()
         local circles = require('circles')
-        circles.setup({ icons = { empty = '', filled = '', lsp_prefix = ''}})
+        circles.setup({ icons = { empty = '', filled = '', lsp_prefix = '' } })
 
         return {
             sync_root_with_cwd = true,
             respect_buf_cwd = true,
             view = {
-                adaptive_size = true,
+                adaptive_size = false,
                 side = "left",
                 width = 40,
             },
             renderer = {
                 group_empty = true,
-                 icons = {
+                icons = {
                     glyphs = circles.get_nvimtree_glyphs(),
                 },
             },
@@ -30,7 +30,7 @@ return {
             },
             update_focused_file = {
                 enable = true,
-                update_root = true
+                update_root = false
             }
         }
     end,
