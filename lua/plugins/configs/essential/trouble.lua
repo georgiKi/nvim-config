@@ -6,11 +6,9 @@ return {
     enabled = true,
     lazy = true,
     event = "VeryLazy",
-    dependencies = "kyazdani42/nvim-web-devicons",
-    config = {
-        icons = true
-    },
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = {},
     artifacts = function()
-        utils.keymap('n', '<leader>t', '<cmd>TroubleToggle<cr>', { desc = "Toggle Trouble" })
+        utils.keymap('n', '<leader>t', '<cmd>Trouble diagnostics toggle<cr>', { desc = "Trouble Diagnostics" })
     end
 }
