@@ -8,7 +8,7 @@ return {
     config = {
         ensure_installed = {
             "lua_ls",
-            "tsserver",
+            -- "tsserver",
             "quick_lint_js",
             "cssls",
             "cssmodules_ls",

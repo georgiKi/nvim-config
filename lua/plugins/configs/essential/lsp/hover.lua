@@ -5,19 +5,20 @@ return {
     repo_path = "lewis6991/hover.nvim",
     enabled = true,
     lazy = true,
+    priority = 800,
     event = "UIEnter",
-    configFunc = function ()
-       return {
-           init = function()
+    configFunc = function()
+        return {
+            init = function()
                 require("hover.providers.lsp")
             end,
             title = false,
             preview_opts = {
                 border = 'rounded'
             },
-       }
+        }
     end,
-    artifacts = function ()
+    artifacts = function()
         utils.keymap("n", "<leader>p", "<cmd>lua require('hover').hover()<CR>", { desc = "Hover" })
     end
 }
