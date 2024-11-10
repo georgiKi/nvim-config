@@ -8,9 +8,9 @@ return {
     event = "VeryLazy",
     config = {},
     artifacts = function()
-        utils.keymap("n", "<C-k>", "<cmd> lua require('neoscroll').ctrl_u({ duration = 250 })<CR>",
+        utils.keymap("n", "<C-y>", "<cmd> lua require('neoscroll').ctrl_u({ duration = 250 })<CR>",
             { desc = "Scroll Up" })
-        utils.keymap("n", "<C-j>", "<cmd> lua require('neoscroll').ctrl_d({ duration = 250 })<CR>",
+        utils.keymap("n", "<C-n>", "<cmd> lua require('neoscroll').ctrl_d({ duration = 250 })<CR>",
             { desc = "Scroll Down" })
     end
 }

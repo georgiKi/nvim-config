@@ -13,7 +13,7 @@ return {
             show_hidden = true
         }
     },
-    artifacts = function ()
-        utils.keymap("n", "<leader>n", ":Triptych<CR>", { desc = "Toggle File System" })
+    artifacts = function()
+        utils.keymap("n", "<leader>e", ":Triptych<CR>", { desc = "Toggle File System" })
     end
 }
