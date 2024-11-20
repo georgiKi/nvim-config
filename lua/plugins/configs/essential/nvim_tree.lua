@@ -3,7 +3,7 @@ local utils = require "core.utils"
 return {
     name = "nvim-tree",
     repo_path = "kyazdani42/nvim-tree.lua",
-    enabled = false,
+    enabled = true,
     lazy = true,
     event = "VeryLazy",
     dependencies = "kyazdani42/nvim-web-devicons",

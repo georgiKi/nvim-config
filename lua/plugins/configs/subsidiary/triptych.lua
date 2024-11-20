@@ -4,7 +4,7 @@ return {
     name = "triptych",
     repo_path = "simonmclean/triptych.nvim",
     dependencies = { 'nvim-lua/plenary.nvim' },
-    enabled = true,
+    enabled = false,
     lazy = true,
     event = "VeryLazy",
     config = {
