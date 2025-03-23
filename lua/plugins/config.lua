@@ -8,8 +8,9 @@ local ui = "plugins.configs.ui."
 
 do
     return {
-
         -- Essential
+        require(essential .. "ai.avente"),
+        require(essential .. "ai.copilot"),
         require(essential .. "lsp.hover"),
         require(essential .. "lsp.mason"),
         require(essential .. "lsp.mason_lspconfig"),
