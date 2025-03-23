@@ -46,12 +46,11 @@ return {
                 format = function(entry, vim_item)
                     vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
                     vim_item.menu = ({
-                        codeium = "[Codeium]",
                         nvim_lsp = "[Lsp]",
                         luasnip = "[Snip]",
                         buffer = "[Buf]",
                         path = "[Path]",
-                        })[entry.source.name]
+                    })[entry.source.name]
                     return vim_item
                 end,
             },
@@ -65,16 +64,15 @@ return {
                 }
             },
             sources = {
-                { name = "codeium" },
                 { name = "nvim_lsp" },
                 { name = "buffer" },
-                { name = "luasnip"},
-                { name = "path"}
+                { name = "luasnip" },
+                { name = "path" }
             },
             snippet = {
-                    expand = function(args)
-                        luasnip.lsp_expand(args.body)
-                    end,
+                expand = function(args)
+                    luasnip.lsp_expand(args.body)
+                end,
             },
             mapping = cmp.mapping.preset.insert({
                 ['<Tab>'] = cmp.mapping.select_next_item(),
