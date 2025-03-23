@@ -35,6 +35,7 @@ do
         require(essential .. "trouble"),
 
         -- Subsidiary
+        require(subsidiary .. "actions_preview"),
         require(subsidiary .. "autopairs"),
         require(subsidiary .. "blame"),
         require(subsidiary .. "close_buffers"),
@@ -44,10 +45,8 @@ do
         require(subsidiary .. "gh"),
         require(subsidiary .. "goto_preview"),
         require(subsidiary .. "hop"),
-        require(subsidiary .. "neoformat"),
         require(subsidiary .. "neotest"),
         require(subsidiary .. "nvim-colorizer"),
-        require(subsidiary .. "nvim_code_action_menu"),
         require(subsidiary .. "nvim_treesitter_context"),
         require(subsidiary .. "paren_hint"),
         require(subsidiary .. "toggleterm"),
