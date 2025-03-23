@@ -1,5 +1,5 @@
 return {
-    repo_path = "nvim-pack/nvim-spectre",
+    repo_path = "MagicDuck/grug-far.nvim",
     enabled = true,
     lazy = true,
     event = "VeryLazy"

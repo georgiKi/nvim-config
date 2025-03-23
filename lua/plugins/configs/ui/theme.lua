@@ -9,23 +9,23 @@ return {
     lazy = true,
     event = "UIEnter",
     config = {
-        undercurl = true,           -- enable undercurls
+        undercurl = true, -- enable undercurls
         commentStyle = { italic = true },
         functionStyle = {},
         keywordStyle = {},
         statementStyle = { bold = true },
         typeStyle = { italic = true },
-        variablebuiltinStyle = { italic = true},
-        specialReturn = true,       -- special highlight for the return keyword
-        specialException = true,    -- special highlight for exception handling keywords
-        transparent = true,        -- do not set background color
-        dimInactive = false,        -- dim inactive window `:h hl-NormalNC`
-        globalStatus = true,       -- adjust window separators highlight for laststatus=3
-        terminalColors = true,      -- define vim.g.terminal_color_{0,17}
-        theme = "default",          -- Load "default" theme or the experimental "light" theme
+        variablebuiltinStyle = { italic = true },
+        specialReturn = true,    -- special highlight for the return keyword
+        specialException = true, -- special highlight for exception handling keywords
+        transparent = true,      -- do not set background color
+        dimInactive = false,     -- dim inactive window `:h hl-NormalNC`
+        globalStatus = true,     -- adjust window separators highlight for laststatus=3
+        terminalColors = true,   -- define vim.g.terminal_color_{0,17}
+        theme = "default",       -- Load "default" theme or the experimental "light" theme
         colors = {
             theme = {
-                 all = {
+                all = {
                     ui = {
                         bg_gutter  = "NONE",
                         bg_m3      = "NONE",
@@ -37,14 +37,14 @@ return {
                         bg_p1      = "NONE",
                         bg_p2      = "NONE",
                         fg_reverse = "NONE",
-                        float = {
-                            bg     = "NONE",
+                        float      = {
+                            bg = "NONE",
                         },
                     }
                 }
             }
         },
-        overrides = function ()
+        overrides = function()
             return {
                 WinSeparator = { fg = "#24242e" },
             }

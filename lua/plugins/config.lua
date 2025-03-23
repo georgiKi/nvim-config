@@ -21,6 +21,7 @@ do
         require(essential .. "comment"),
         require(essential .. "conform"),
         require(essential .. "gitsigns"),
+        require(essential .. "grug_far"),
         require(essential .. "hlslens"),
         require(essential .. "indent_blankline"),
         require(essential .. "lazygit"),
@@ -30,7 +31,6 @@ do
         require(essential .. "cmp.nvim_cmp"),
         require(essential .. "cmp.snippets_set"),
         require(essential .. "nvim_tree"),
-        require(essential .. "spectre"),
         require(essential .. "outline"),
         require(essential .. "trouble"),
 
