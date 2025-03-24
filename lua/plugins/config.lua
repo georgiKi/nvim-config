@@ -8,8 +8,9 @@ local ui = "plugins.configs.ui."
 
 do
     return {
-
         -- Essential
+        require(essential .. "ai.avente"),
+        require(essential .. "ai.copilot"),
         require(essential .. "lsp.hover"),
         require(essential .. "lsp.mason"),
         require(essential .. "lsp.mason_lspconfig"),
@@ -20,6 +21,7 @@ do
         require(essential .. "comment"),
         require(essential .. "conform"),
         require(essential .. "gitsigns"),
+        require(essential .. "grug_far"),
         require(essential .. "hlslens"),
         require(essential .. "indent_blankline"),
         require(essential .. "lazygit"),
@@ -29,11 +31,11 @@ do
         require(essential .. "cmp.nvim_cmp"),
         require(essential .. "cmp.snippets_set"),
         require(essential .. "nvim_tree"),
-        require(essential .. "spectre"),
         require(essential .. "outline"),
         require(essential .. "trouble"),
 
         -- Subsidiary
+        require(subsidiary .. "actions_preview"),
         require(subsidiary .. "autopairs"),
         require(subsidiary .. "blame"),
         require(subsidiary .. "close_buffers"),
@@ -43,10 +45,8 @@ do
         require(subsidiary .. "gh"),
         require(subsidiary .. "goto_preview"),
         require(subsidiary .. "hop"),
-        require(subsidiary .. "neoformat"),
         require(subsidiary .. "neotest"),
         require(subsidiary .. "nvim-colorizer"),
-        require(subsidiary .. "nvim_code_action_menu"),
         require(subsidiary .. "nvim_treesitter_context"),
         require(subsidiary .. "paren_hint"),
         require(subsidiary .. "toggleterm"),
