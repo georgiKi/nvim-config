@@ -1,3 +1,17 @@
+local function setup_avante_highlights()
+    local set_hl = vim.api.nvim_set_hl
+
+    set_hl(0, "AvanteSidebarWinSeparator", {
+        bg = 'NONE',
+        fg = '#24242e',
+    })
+
+    set_hl(0, "AvanteTitle", {
+        bg = 'NONE',
+        fg = 'NONE',
+    })
+end
+
 return {
     name = "avante",
     repo_path = "yetone/avante.nvim",
@@ -7,15 +21,17 @@ return {
         "nvim-lua/plenary.nvim",
         "MunifTanjim/nui.nvim",
         --- The below dependencies are optional,
-        "echasnovski/mini.pick",         -- for file_selector provider mini.pick
+        "echasnovski/mini.pick",     -- for file_selector provider mini.pick
         "nvim-telescope/telescope.nvim", -- for file_selector provider telescope
-        "hrsh7th/nvim-cmp",              -- autocompletion for avante commands and mentions
-        "ibhagwan/fzf-lua",              -- for file_selector provider fzf
-        "nvim-tree/nvim-web-devicons",   -- or echasnovski/mini.icons
+        "hrsh7th/nvim-cmp",          -- autocompletion for avante commands and mentions
+        "ibhagwan/fzf-lua",          -- for file_selector provider fzf
+        "nvim-tree/nvim-web-devicons",
     },
-    enabled = false,
+    enabled = true,
     lazy = true,
-    event = "VeryLazy",
+    priority = 900,
+    event = "UIEnter",
+    build = "make",
     config = {
         claude = {
             endpoint = "https://api.anthropic.com",
@@ -48,4 +64,7 @@ return {
             },
         },
     },
+    artifacts = function()
+        setup_avante_highlights()
+    end,
 }
