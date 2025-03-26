@@ -10,6 +10,11 @@ git clone https://github.com/georgi2411/nvim-config.git ~/.config/nvim
 - [RipGrep](https://github.com/BurntSushi/ripgrep#installation)
 - [Fd](https://github.com/sharkdp/fd#installation)
 
+For 'avente' plugin make sure to build it first
+
+- 'cd ~/.local/share/nvim/lazy/avante.nvim'
+- 'make'
+
 ### Plugin Config Object
 
 - `name` : Name of the plugin [Optional]
