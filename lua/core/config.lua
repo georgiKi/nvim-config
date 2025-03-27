@@ -47,7 +47,7 @@ vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 
 vim.diagnostic.config({
-    virtual_lines = false,
+    virtual_lines = true,
     virtual_text = false,
     underline = true,
     float = {
@@ -55,10 +55,6 @@ vim.diagnostic.config({
         width = 80
     }
 })
-
--- Diagnostics automatically on hover
-vim.o.updatetime = 250
-vim.cmd [[autocmd CursorHold * lua vim.diagnostic.open_float(nil, {focus=false})]]
 
 -- Cache lua files
 vim.loader.enable()

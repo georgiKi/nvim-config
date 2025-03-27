@@ -47,5 +47,14 @@ return {
             --     }
             -- end
         }
+
+        -- Force Disable Virtual Text
+        vim.api.nvim_create_autocmd("LspAttach", {
+            callback = function(_)
+                vim.diagnostic.config({
+                    virtual_text = false,
+                })
+            end,
+        })
     end
 }

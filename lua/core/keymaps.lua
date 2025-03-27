@@ -46,3 +46,10 @@ utils.keymap("v", "<S-k>", ":m .-2<CR>==")
 
 -- Persist copied value in clipboard
 utils.keymap("v", "p", '"_dP')
+
+-- Open diagnostic float window
+utils.keymap(
+    "n",
+    "<leader>dt", "<cmd> lua vim.diagnostic.open_float(nil, {focus=false})<CR>",
+    { desc = "Open Diagnostic Float" }
+)
