@@ -15,6 +15,9 @@ For 'avente' plugin make sure to build it first
 - 'cd ~/.local/share/nvim/lazy/avante.nvim'
 - 'make'
 
+For 'grug-far' plugin makse sure to install 
+- brew install ast-grep
+
 ### Plugin Config Object
 
 - `name` : Name of the plugin [Optional]
