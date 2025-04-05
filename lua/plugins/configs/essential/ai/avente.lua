@@ -26,7 +26,7 @@ return {
         "ibhagwan/fzf-lua",              -- for file_selector provider fzf
         "nvim-tree/nvim-web-devicons",
     },
-    enabled = true,
+    enabled = false,
     lazy = true,
     event = "VeryLazy",
     build = "make",
