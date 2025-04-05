@@ -16,7 +16,12 @@ For 'avente' plugin make sure to build it first
 - 'make'
 
 For 'grug-far' plugin makse sure to install 
+
 - brew install ast-grep
+
+For 'bookmarks' plugin make sure to install
+
+- brew install sqlite
 
 ### Plugin Config Object
 

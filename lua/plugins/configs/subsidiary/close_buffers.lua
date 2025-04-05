@@ -7,8 +7,10 @@ return {
     lazy = true,
     event = "VeryLazy",
     config = {},
-    artifacts = function ()
-        utils.keymap("n", "<leader>Bo", "<cmd>lua require('close_buffers').wipe({ type = 'other' }) <CR>", { desc = "Wipe all buffers except the current" })
-        utils.keymap("n", "<leader>Ba", "<cmd>lua require('close_buffers').wipe({ type = 'all', force = true }) <CR>", { desc = "Wipe all buffers" })
+    artifacts = function()
+        utils.keymap("n", "<leader>Bo", "<cmd>lua require('close_buffers').wipe({ type = 'other' }) <CR>",
+            { desc = "Wipe all buffers except the current" })
+        utils.keymap("n", "<leader>Ba", "<cmd>lua require('close_buffers').wipe({ type = 'all', force = true }) <CR>",
+            { desc = "Wipe all buffers" })
     end
 }

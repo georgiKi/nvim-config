@@ -36,6 +36,7 @@ do
         require(subsidiary .. "actions_preview"),
         require(subsidiary .. "autopairs"),
         require(subsidiary .. "blame"),
+        require(subsidiary .. "bookmarks"),
         require(subsidiary .. "close_buffers"),
         require(subsidiary .. "detour"),
         require(subsidiary .. "diffview"),

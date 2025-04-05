@@ -10,6 +10,6 @@ return {
         keys = "etovxqpdygfblzhckisuran"
     },
     artifacts = function()
-        utils.keymap("n", "<leader>b", "<cmd> lua require('reach').buffers(buffer_options) <CR>", { desc = "Buffers" })
+        utils.keymap("n", "<leader>u", "<cmd> lua require('reach').buffers(buffer_options) <CR>", { desc = "Buffers" })
     end
 }

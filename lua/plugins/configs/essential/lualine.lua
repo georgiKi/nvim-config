@@ -3,6 +3,7 @@ return {
     repo_path = "nvim-lualine/lualine.nvim",
     enabled = true,
     lazy = true,
+    priority = 900,
     event = "VeryLazy",
     config = {
         options = {
@@ -17,24 +18,24 @@ return {
             }
         },
         sections = {
-            lualine_a = {'mode'},
-            lualine_b = {'diff', 'diagnostics'},
-            lualine_c = {'filename', 'filetype'},
-            lualine_x = {'branch'},
+            lualine_a = { 'mode' },
+            lualine_b = { 'diagnostics' },
+            lualine_c = { 'filename' },
+            lualine_x = { 'branch' },
             lualine_y = {},
-            lualine_z = {'location'}
+            lualine_z = {}
         },
         inactive_sections = {
             lualine_a = {},
             lualine_b = {},
-            lualine_c = {'filename'},
-            lualine_x = {'location'},
+            lualine_c = { 'filename' },
+            lualine_x = { 'location' },
             lualine_y = {},
             lualine_z = {}
         }
     },
     artifacts = function(lualine)
-        local custom_theme = require'lualine.themes.everforest'
+        local custom_theme = require 'lualine.themes.everforest'
 
         custom_theme.inactive.c.bg = 'nil'
         custom_theme.visual.c.bg = 'nil'
@@ -44,9 +45,9 @@ return {
         custom_theme.normal.c.bg = 'nil'
 
         lualine.setup {
-           options = {
+            options = {
                 theme = custom_theme
-           }
+            }
         }
     end
 }
