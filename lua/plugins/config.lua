@@ -44,6 +44,7 @@ do
         require(subsidiary .. "gh"),
         require(subsidiary .. "goto_preview"),
         require(subsidiary .. "hop"),
+        require(subsidiary .. "nemu"),
         require(subsidiary .. "neotest"),
         require(subsidiary .. "nvim-colorizer"),
         require(subsidiary .. "nvim_treesitter_context"),
