@@ -1,24 +1,15 @@
 local utils = require "core.utils"
 
 return {
-    name = "hover",
-    repo_path = "lewis6991/hover.nvim",
+    name = "pretty_hover",
+    repo_path = "Fildo7525/pretty_hover",
     enabled = true,
     lazy = true,
-    priority = 800,
-    event = "UIEnter",
-    configFunc = function()
-        return {
-            init = function()
-                require("hover.providers.lsp")
-            end,
-            title = false,
-            preview_opts = {
-                border = 'rounded'
-            },
-        }
-    end,
+    event = "LspAttach",
+    config = {
+        max_width = 120
+    },
     artifacts = function()
-        utils.keymap("n", "<leader>p", "<cmd>lua require('hover').hover()<CR>", { desc = "Hover" })
+        utils.keymap("n", "<leader>p", "<cmd> lua require('pretty_hover').hover()<CR>", { desc = "LSP Hover" })
     end
 }
