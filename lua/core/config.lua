@@ -1,6 +1,9 @@
 ---------------------------------------------------------------------------
 -- Vim Configuration
 ---------------------------------------------------------------------------
+-- shiftwidth = 2,            -- the number of spaces inserted for each indentation
+-- tabstop = 2,               -- insert 2 spaces for a tab
+-- numberwidth = 2,           -- set number column width to 2 {default 4}
 
 local config = {
     backup = false,
