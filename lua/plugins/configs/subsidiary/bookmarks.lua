@@ -9,7 +9,7 @@ return {
         "stevearc/dressing.nvim"
     },
     enabled = true,
-    lazy = false,
+    lazy = true,
     event = "VeryLazy",
     config = {
         signs = {
