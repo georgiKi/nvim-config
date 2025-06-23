@@ -36,12 +36,8 @@ return {
             }
         },
         sources = {
-            default = { 'copilot', 'lsp', 'path', 'buffer', 'snippets' },
+            default = { 'codeium', 'lsp', 'path', 'buffer', 'snippets' },
             providers = {
-                copilot = {
-                    score_offset = 100,
-                    module = "blink-copilot",
-                },
                 lsp = {
                     score_offset = 90
                 },
@@ -52,7 +48,12 @@ return {
                     min_keyword_length = 3,
                     score_offset = 1
                 },
-
+                codeium = {
+                    name = 'Codeium',
+                    module = 'codeium.blink',
+                    async = true,
+                    score_offset = 100
+                },
             },
         },
         fuzzy = { implementation = "lua" },
